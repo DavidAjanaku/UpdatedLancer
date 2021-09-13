@@ -1,0 +1,108 @@
+.header{
+    width: 100%;
+    height: 88vh;
+    display: flex;
+    background-color: var(--color-primary);
+
+    @include respond(tab-port){
+        height: 100vh;
+        background-color: none;
+        background-image: linear-gradient(to bottom right,
+        rgba(40, 179, 75,.7),
+        rgba(40, 179, 75,.7)),
+        url(/images/hero-4.jpg);
+        background-size: cover;
+        background-position: center
+    }
+
+    
+    &__content{
+        @include absCentre;
+        width: fit-content;
+        padding: 1em;
+
+        @include respond(tab-port){
+            width: 80%;
+            // background-color: red;
+            // background-color: orangered;
+        }
+
+        @include respond(phone){
+            text-align: left;
+        }
+    }
+
+    &__search{
+        display: inline-block;
+        width: 100% ;
+        background-color: #fff;
+        display: flex;
+        align-items: stretch;
+        padding: 1rem;
+
+       
+    }
+
+    &__search-btn{
+        width: 2rem;
+        height: 2rem;
+        background: transparent;
+        border: none;
+    }
+
+    &__search-icon{
+        width: 100%;
+        height: 100%;
+        fill: var(--color-dark);
+    }
+
+    &__search-input{
+        outline: none;
+        border: none;
+        flex: 1;
+        padding: 0 .7rem;
+        font-family: var(--default-font);
+    }
+
+    &__sectOne{
+        position: relative;
+        width: 45%;
+        height: 100%;
+        @include respond(tab-port){
+            flex: 1;
+        }
+    }
+
+    &__sectTwo{
+        width: 55%;
+        height: 100%;
+        padding: 1em;
+
+
+        @include respond(tab-port){
+            display: none;
+        }
+    }
+
+    &__image{
+        width: 100%;
+        height: 100%;
+        object-position: center;
+
+        @include respond(tab-port){
+            display: none;
+        }
+
+       
+    }
+
+    &__cta{
+        padding: 1.5rem 4rem;
+        border-radius: 3px;
+        background-color: var(--color-dark);
+        color:var(--color-accent);
+        cursor: pointer;
+    }
+
+
+}

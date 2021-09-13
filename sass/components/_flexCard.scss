@@ -1,0 +1,58 @@
+.flex-card{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    &:not(:last-child){
+        margin-bottom: 3rem;
+    }
+
+    &:nth-child(even){
+        
+        .flex-card__card{
+           order: 2;
+
+        }
+    }
+   
+
+    &__card{
+        width: 40rem;
+        
+        @include respond(phone){
+            flex: 1;
+        }
+
+    }
+
+    &__card,
+    &__illustration{
+        padding: 1em;
+    }
+
+    &__illustration{
+
+        @include respond(phone){
+            display: none;
+        }
+    }
+
+    &__numbering,
+    &__title{
+        font-family: var(--default-font-2);
+        font-size: 3rem;
+        font-weight: 900;
+        line-height: 1.2;
+    }
+
+    &__title{
+        text-transform: capitalize;
+        color: var(--color-primary);
+    }
+
+    &__desc{
+        line-height: 1.7;
+    }
+
+
+}

@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lancers Point</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/logos/1615836169185_lancerspoint-logo-2.png" type="image/x-icon">
+</head>
+<body id="landing">
+    <input type="checkbox" id="toggleNav" class="hamburger">
+
+    <label for="toggleNav" class="hamburger__button">
+       <figure>
+            <span class="hamburger__line"></span>
+            <span class="hamburger__line"></span>
+            <span class="hamburger__line"></span>
+       </figure>
+    </label>
+
+    <div class="overlay"></div>
+
+    <header class="navigation">
+        <a href="index.html">
+            <img src="images/logos/1615836166736_lanserpoint-point-long.png" alt="logo" class="navigation__logo">
+        </a>
+       <form action="#" class="navigation__search">
+            <input type="text" class="navigation__input" placeholder="Search for a skill...">
+            <button class="navigation__search-btn">
+                <svg class="navigation__search-icon">
+                    <use xlink:href="images/sprite.svg#icon-magnifying-glass"></use>
+                </svg>
+            </button>
+       </form>
+
+        <nav>
+            <ul class="navigation__list">
+                <li class="navigation__item">
+                    <a href="" class="navigation__link">find jobs</a>
+                    <button class="navigation__dropdown-btn">
+                        <svg class="navigation__dropdown-icon">
+                            <use xlink:href="images/sprite.svg#icon-chevron-small-down"></use>
+                        </svg>
+                    </button>
+                    
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link hiw">how it works</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link wco">why choose us</a>
+                </li>
+            </ul>
+        </nav>
+
+        <a href="/html/registeration.html" class="navigation__cta">
+           <span>Get Started</span>
+            <svg class="navigation__login-icon">
+                <use xlink:href="images/sprite.svg#icon-login"></use>
+            </svg>
+        </a>
+    </header>
+
+    <header class="header">
+        <div class="header__sectOne">
+           <div class="header__content">
+                <h1 class="heading u-margin-bottom-small">
+                    <span class="heading__main u-margin-bottom-small">find the best<br/> freelancer talent</span>
+                    <span class="heading__sub u-margin-bottom-small">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur eum quas veniam consequuntur nulla quia, dicta voluptate nisi maiores repudiandae aspernatur nobis.</span>
+                </h1>
+
+                <div class="header__search u-margin-bottom-medium">
+                    <button class="header__search-btn">
+                        <svg class="header__search-icon">
+                            <use xlink:href="/images/sprite.svg#icon-magnifying-glass"></use>
+                        </svg>
+                    </button>
+                    <input type="text" class="header__search-input" placeholder="search for a skill...">
+                </div>
+
+                <a href="./html/create-job-post.html" class="header__cta">Hire a Lancer</a>
+           </div>
+        </div>
+        <div class="header__sectTwo">
+              <img src="images/illustrations/Telecommuting-pana.svg" alt="illstration" class="header__image">
+        </div>
+    </header>
+
+    <main>
+        <!-- STEPS TO TAKE WHEN GETTING STARTED -->
+        <section class="steps" id="steps">
+            <div class="u-margin-bottom-medium">
+                <h2 class="heading-secondary">
+                    get the job done
+                </h2>
+            </div>
+
+            <!-- A ROW OF MAX-WIDTH 114REM -->
+            <div class="row">
+                <div class="flex-card">
+                    <div class="flex-card__card">
+                        <h2 class="flex-card__numbering">1</h2>
+                        <h2 class="flex-card__title u-margin-bottom-small">register</h2>
+                        <p class="flex-card__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed expedita similique quaerat, atque eligendi quia cupiditate ipsam. Non autem dolorem id reiciendis.</p>
+                    </div>
+                    <figure class="flex-card__illustration">ILLUSTRATION</figure>
+                </div>
+
+                <div class="flex-card">
+                    <div class="flex-card__card">
+                        <h2 class="flex-card__numbering">2</h2>
+                        <h2 class="flex-card__title u-margin-bottom-small">post a job</h2>
+                        <p class="flex-card__desc"> Adipisci ab soluta perspiciatis et repudiandae hic beatae voluptatem, consectetur asperiores eius repellendus modi odio illo voluptatum fugit quas eaque tempora distinctio.</p>
+                    </div>
+                    <figure class="flex-card__illustration">ILLUSTRATION</figure>
+                </div>
+    
+                <div class="flex-card">
+                    <div class="flex-card__card">
+                        <h2 class="flex-card__numbering">3</h2>
+                        <h2 class="flex-card__title u-margin-bottom-small">hire a lancer</h2>
+                        <p class="flex-card__desc"> Architecto nesciunt, provident itaque voluptates sunt cumque culpa error! Dolores expedita facilis veniam exercitationem iure culpa rem laudantium, ex molestiae, itaque tempore?</p>
+                    </div>
+                    <figure class="flex-card__illustration">ILLUSTRATION</figure>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- LANCER CATEGORIES AVAILABLE -->
+        <section class="lancer-categories">
+            <div class="u-margin-bottom-medium">
+                <h2 class="heading-tertiary">
+                    hire a freelancer from various categories
+                </h2>
+            </div>
+
+            <!-- A ROW OF MAX-WIDTH 114REM -->
+            <div class="row">
+                <div class="categories">
+                    <figure class="category">
+                        <svg class="category__icon">
+                            <use xlink:href="/images/sprite.svg#icon-magnifying-glass"></use>
+                        </svg>
+                        <span class="category-desc">Programming & Tech </span>
+                    </figure>
+                    <figure class="category">
+                        <svg class="category__icon">
+                            <use xlink:href="/images/sprite.svg#icon-magnifying-glass"></use>
+                        </svg>
+                        <span class="category-desc">Video & Animtion</span>
+                    </figure>
+                    <figure class="category">
+                        <svg class="category__icon">
+                            <use xlink:href="/images/sprite.svg#icon-magnifying-glass"></use>
+                        </svg>
+                        <span class="category-desc">Graphics & Design </span>
+                    </figure>
+                    <figure class="category">
+                        <svg class="category__icon">
+                            <use xlink:href="/images/sprite.svg#icon-magnifying-glass"></use>
+                        </svg>
+                        <span class="category-desc">Digital Marketing </span>
+                    </figure>
+                    <figure class="category">
+                        <svg class="category__icon">
+                            <use xlink:href="/images/sprite.svg#icon-magnifying-glass"></use>
+                        </svg>
+                        <span class="category-desc">Music & Audio </span>
+                    </figure>
+                    <figure class="category">
+                        <svg class="category__icon">
+                            <use xlink:href="/images/sprite.svg#icon-magnifying-glass"></use>
+                        </svg>
+                        <span class="category-desc">Business </span>
+                    </figure>
+                    <figure class="category">
+                        <svg class="category__icon">
+                            <use xlink:href="/images/sprite.svg#icon-magnifying-glass"></use>
+                        </svg>
+                        <span class="category-desc">Writing & Translation </span>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- WHAT MAKES US SPECIAL -->
+        <section class="what-makes-us-special" id="special">
+            <div class="u-margin-bottom-medium">
+                <h2 class="heading-secondary">
+                    what makes us special
+                </h2>
+            </div>
+
+            <!-- A ROW OF MAX-WIDTH 114REM -->
+            <div class="row">
+               <div class="what-special">
+                   <aside class="special">
+                       <ul class="special__list">
+                           <li class="special__item">
+                               <h3 class="special__numbering">1</span>
+                               <h3 class="special__title">creditbility</span>
+                               <p class="special__desc">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est eopksio laborum. Sed ut perspiciatis unde omni</p>
+                           </li>
+                           <li class="special__item">
+                               <h3 class="special__numbering">2</span>
+                               <h3 class="special__title">creditbility</span>
+                               <p class="special__desc">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est eopksio laborum. Sed ut perspiciatis unde omni</p>
+                           </li>
+                           <li class="special__item">
+                               <h3 class="special__numbering">3</span>
+                               <h3 class="special__title">creditbility</span>
+                               <p class="special__desc">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est eopksio laborum. Sed ut perspiciatis unde omni</p>
+                           </li>
+                       </ul>
+                   </aside>
+                   <figure class="what-special__illustration">ILLUSTRATION</figure>
+               </div>
+            </div>
+        </section>
+
+        <!-- USERS REMARK -->
+        <section class="users-remark">
+            <div class="u-margin-bottom-medium">
+                <h2 class="heading-secondary-w">
+                    what our users are saying
+                </h2>
+            </div>
+
+            <div class="row">
+                <div class="slider">
+                    <div class="slide slide--1">
+                        <figure class="testimony">
+                            <h3 class="testimony__title u-margin-bottom-small">best deciesion ever!</h3>
+                            <p class="testimony__text u-margin-bottom-small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, exercitationem natus! Possimus suscipit voluptate voluptatibus dolorum natus ipsum, quis, assumenda, minima rem odit libero ut quo. Minima corrupti ab sapiente.</p>
+
+                            <div class="testimony__user">
+                                <img src="./images/user-1.jpg" alt="#" class="testimony__user-img">
+                                <h4 class="testimony__user-name">GOERGE OF THE JUNGLE</h4>
+                                <span class="testimony__user-post">C.E.O Of Hakuna matata jungle</span>
+                            </div>
+                        </figure>
+                    </div>
+                    <div class="slide slide--2">
+                        <figure class="testimony">
+                            <h3 class="testimony__title u-margin-bottom-small">an amazing site!</h3>
+                            <p class="testimony__text u-margin-bottom-small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, exercitationem natus! Possimus suscipit voluptate voluptatibus dolorum natus ipsum, quis, assumenda, minima rem odit libero ut quo. Minima corrupti ab sapiente.
+                            Nemo consectetur, exercitationem cupiditate ab sed cumque eveniet? Minima culpa commodi explicabo temporibus officia magnam eaque numquam assumenda inventore, voluptatem ducimus ad?
+                            </p>
+
+                            <div class="testimony__user">
+                                <img src="./images/user-2.jpg" alt="#" class="testimony__user-img">
+                                <h4 class="testimony__user-name">Laura mike</h4>
+                                <span class="testimony__user-post">Front end devloper, Facebook</span>
+                            </div>
+                        </figure>
+                    </div>
+                    <div class="slide slide--3">
+                        <figure class="testimony">
+                            <h3 class="testimony__title u-margin-bottom-small">best deciesion ever!</h3>
+                            <p class="testimony__text u-margin-bottom-small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, exercitationem natus! Possimus suscipit voluptate voluptatibus dolorum natus ipsum, quis, assumenda, minima rem odit libero ut quo. Minima corrupti ab sapiente.</p>
+
+                            <div class="testimony__user">
+                                <img src="./images/user-1.jpg" alt="#" class="testimony__user-img">
+                                <h4 class="testimony__user-name">GOERGE OF THE JUNGLE</h4>
+                                <span class="testimony__user-post">C.E.O Of Hakuna matata jungle</span>
+                            </div>
+                        </figure>
+                    </div>
+                    <div class="slide slide--4">
+                        <figure class="testimony">
+                            <h3 class="testimony__title u-margin-bottom-small">an amazing site!</h3>
+                            <p class="testimony__text u-margin-bottom-small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, exercitationem natus! Possimus suscipit voluptate voluptatibus dolorum natus ipsum, quis, assumenda, minima rem odit libero ut quo. Minima corrupti ab sapiente.
+                            Nemo consectetur, exercitationem cupiditate ab sed cumque eveniet? Minima culpa commodi explicabo temporibus officia magnam eaque numquam assumenda inventore, voluptatem ducimus ad?
+                            </p>
+
+                            <div class="testimony__user">
+                                <img src="./images/user-2.jpg" alt="#" class="testimony__user-img">
+                                <h4 class="testimony__user-name">Laura mike</h4>
+                                <span class="testimony__user-post">Front end devloper, Facebook</span>
+                            </div>
+                        </figure>
+                    </div>
+
+                    <button class="slider__button slider__button--prev">&#10094;</button>
+                    <button class="slider__button slider__button--next">&#10095;</button>
+                   
+
+
+                    <div class="dots"></div>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- FEATURED PROJECTS -->
+        <section class="featured-projects">
+            <div class="u-margin-bottom-medium">
+                <h2 class="heading-secondary">
+                   featured projects
+                </h2>
+            </div>
+
+            <!-- A ROW OF MAX-WIDTH 114REM -->
+            <div class="row">
+                <div class="card-container u-margin-bottom-huge">
+
+                    <div class="card">
+                        <img src="/images/nat-5.jpg" alt="image" class="card__img u-margin-bottom-small">
+                        <div class="card__content">
+                            <h2 class="card__title u-margin-bottom-small">Yoga website</h2>
+                            <p class="card__desc u-margin-bottom-small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor #incididunt ero labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco poriti laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum...</p>
+                            <span class="card__price">250k - 300k</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="/images/nat-6.jpg" alt="image" class="card__img u-margin-bottom-small">
+                        <div class="card__content">
+                            <h2 class="card__title u-margin-bottom-small">Logo for food</h2>
+                            <p class="card__desc u-margin-bottom-small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor #incididunt ero labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco poriti laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum...</p>
+                            <span class="card__price">250k - 300k</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="/images/nat-5.jpg" alt="image" class="card__img u-margin-bottom-small">
+                        <div class="card__content">
+                            <h2 class="card__title u-margin-bottom-small">Shop site</h2>
+                            <p class="card__desc u-margin-bottom-small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor #incididunt ero labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco poriti laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum...</p>
+                            <span class="card__price">250k - 300k</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="u-center-text">
+                    <a href="#" class="btn btn__more">view more &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- QUESTIONS SECTION -->
+        <section class="section-questions">
+            <div class="u-margin-bottom-medium">
+                <h2 class="heading-secondary-w">
+                    have any questions?
+                 </h2>
+            </div>
+
+            <!-- A ROW OF MAX-WIDTH 114REM -->
+            <div class="row ">
+                <div class="accordion-container">
+                    <figure class="accordion">
+                        <button class="accordion__button">
+                            <svg class="accordion__icon">
+                                <use xlink:href="images/sprite.svg#icon-chevron-small-down"></use>
+                            </svg>
+                        </button>
+                        <div class="accordion__content">
+                            <h3 class="accordion__title u-margin-bottom-small">What is confusing you about the site. talk to me?</h3>
+                            <figcaption class="accordion__desc">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor #incididunt ero labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco poriti laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum...
+                            </figcaption>
+                        </div>
+                    </figure>
+
+                    <figure class="accordion">
+                        <button class="accordion__button">
+                            <svg class="accordion__icon">
+                                <use xlink:href="images/sprite.svg#icon-chevron-small-down"></use>
+                            </svg>
+                        </button>
+                        <div class="accordion__content">
+                            <h3 class="accordion__title u-margin-bottom-small">What is confusing you about the site. talk to me?</h3>
+                            <figcaption class="accordion__desc">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor #incididunt ero labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco poriti laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum...
+                            </figcaption>
+                        </div>
+                    </figure>
+
+                    <figure class="accordion">
+                        <button class="accordion__button">
+                            <svg class="accordion__icon">
+                                <use xlink:href="images/sprite.svg#icon-chevron-small-down"></use>
+                            </svg>
+                        </button>
+                        <div class="accordion__content">
+                            <h3 class="accordion__title u-margin-bottom-small">What is confusing you about the site. talk to me?</h3>
+                            <figcaption class="accordion__desc">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor #incididunt ero labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco poriti laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum...
+                            </figcaption>
+                        </div>
+                    </figure>
+                </div>
+
+                <div class="u-center-text">
+                    <a href="#" class="btn btn__more">view more &rarr;</a>
+                </div>
+            </div>
+
+            
+            
+        </section>
+
+<section>
+    <button>
+        <a href="./html/account_settings.html">Press here to next</a>
+    </button>
+</section>
+
+
+        
+    </main>
+    
+    <script src="./js/script.js"></script>
+    <script src="./js/slider.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+.tip{
+    width: 100%;
+    padding: 1rem;
+    border-left: 5px solid transparent;
+    color: #b7b7b7;
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+    transition: all .3s;
+
+  &--active{
+        background-color: #fff;
+        color: var(--color-primary);
+        border-color: currentColor;
+        box-shadow: 0 .2rem .4rem #ccc;
+
+        @include respond(phone){
+            border: none;
+        }
+    }
+
+    
+
+    &__icon{
+        width: 2rem;
+        height: 2rem;
+        fill: currentColor;
+
+
+    }
+
+    &__title{
+        margin: 0 1.5rem;
+        text-transform: capitalize;
+
+        @include respond(phone){
+            display: none;
+        }
+
+    }
+
+    &__icon--check{
+        margin-left: auto;
+        fill: #e2dddd;
+        @include respond(phone){
+            display: none;
+        }
+    }
+  
+}
+
+.tip--active .tip__icon--check{fill: var(--color-primary);}
+.tip--done .tip__icon{
+    @include respond(phone){
+        fill: var(--color-primary);
+    }
+}
+// .tip--active .tip__title{
+//     @include respond(phone){
+//         display: block;
+//     }
+// }
+.tip--done .tip__icon--check{fill: var(--color-primary);}

@@ -1,0 +1,39 @@
+:root{
+    --color-primary:#28B34B;
+    --color-accent:#BEFACD;
+    --color-dark:#263238;
+    --color-grey:#434C4D;
+    --color-light-grey:#f7f7f7;
+
+
+    --default-font: 'Montserrat Alternates', sans-serif;
+    --default-font-2: 'Secular One', sans-serif;
+    --default-font-size: 1.3rem;
+}
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    text-decoration: none;
+}
+
+html{
+    font-size: 62.5%;
+     
+    @include respond(big-desktop){font-size: 75%;}
+    @include respond(tab-land){font-size: 56.25%;}
+    @include respond(tab-port){font-size: 50%;}
+}
+
+body{
+    box-sizing: border-box;
+}
+
+
+::selection{
+    background-color:var(--color-primary);
+    color:#fff;
+}

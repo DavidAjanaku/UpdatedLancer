@@ -1,0 +1,80 @@
+.customRadio{
+    display: inline-block;
+    &__label{
+        padding: 2.5rem 0;
+        box-shadow: 0 0.2rem 0.4rem #ccc;
+        border-radius: 4px;
+        border: none;
+        border-bottom: 4px solid transparent;
+        text-align: center;
+        color: var(--color-dark);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+    }
+    
+    &__icon{
+        fill: currentColor;
+        width: 7rem;
+        height: 7rem;
+        margin-bottom: 1.5rem;
+    }
+
+
+    &__title{
+        font-weight: 600;
+        font-size: 1.3rem;
+    }
+    
+    &__title,
+    &__desc{
+        text-transform: capitalize;
+    }
+    &__desc{
+        font-size: 1.2rem;
+        display: inline-block;
+
+    }
+
+    &__input:checked + &__label{
+        color: var(--color-primary);
+        border-color: currentColor;
+
+    }
+}
+
+.customRadio-group{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 15px;
+
+    &:not(:last-child){
+        margin-bottom: 1.5rem;
+    }
+}
+
+.lancer-budget{
+    border: 1px solid #ddd;
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    &__icon{
+        width: 2rem;
+        height: 2rem;
+        fill: var(--color-primary);
+    }
+
+    &__input{
+        font-size: 1.3rem;
+        font-family: var(--default-font);
+        max-width: 20rem;
+        padding: .8rem;
+        border: none;
+        outline: none;
+        text-align: right;
+    }
+}
+
+
+

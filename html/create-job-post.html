@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lancers Point | Create job post</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/images/logos/1615836169185_lancerspoint-logo-2.png" type="image/x-icon">
+</head>
+<body>
+
+    <input type="checkbox" id="toggleNav" class="hamburger">
+
+    <label for="toggleNav" class="hamburger__button">
+       <figure>
+            <span class="hamburger__line"></span>
+            <span class="hamburger__line"></span>
+            <span class="hamburger__line"></span>
+       </figure>
+    </label>
+
+    <div class="overlay"></div>
+
+    <header class="navigation">
+        <a href="/index.html">
+            <img src="/images/logos/1615836166736_lanserpoint-point-long.png" alt="logo" class="navigation__logo">
+        </a>
+       <form action="#" class="navigation__search">
+            <input type="text" class="navigation__input" placeholder="Search for a skill...">
+            <button class="navigation__search-btn">
+                <svg class="navigation__search-icon">
+                    <use xlink:href="/images/sprite.svg#icon-magnifying-glass"></use>
+                </svg>
+            </button>
+       </form>
+
+        <nav>
+            <ul class="navigation__list">
+                <li class="navigation__item">
+                    <a href="" class="navigation__link">find jobs</a>
+                    <button class="navigation__dropdown-btn">
+                        <svg class="navigation__dropdown-icon">
+                            <use xlink:href="/images/sprite.svg#icon-chevron-small-down"></use>
+                        </svg>
+                    </button>
+                    
+                </li>
+                <li class="navigation__item">
+                    <a href="" class="navigation__link">how it works</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="" class="navigation__link">why choose us</a>
+                    <button class="navigation__dropdown-btn">
+                        <svg class="navigation__dropdown-icon">
+                            <use xlink:href="/images/sprite.svg#icon-chevron-small-down"></use>
+                        </svg>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+
+        <a href="/html/registeration.html" class="navigation__cta">
+            log in
+            <svg class="navigation__login-icon">
+                <use xlink:href="/images/sprite.svg#icon-login"></use>
+            </svg>
+        </a>
+    </header>
+        
+    <main>
+        <div class="job-post">
+
+            <!-- ASIDE NAVIGATION -->
+            <aside class="job-post__aside">
+               <nav class="job_post__navigation">
+                   <ul class="job-post__list">
+                       <li class="job-post__item">
+                           <div class="tip tip--active">
+                               <svg class="tip__icon">
+                                   <use xlink:href="/images/sprite.svg#icon-pencil"></use>
+                               </svg>
+                               <span class="tip__title">title</span>
+                               <svg class="tip__icon tip__icon--check">
+                                <use xlink:href="/images/sprite.svg#icon-check_circle"></use>
+                            </svg>
+                           </div>
+                       </li>
+
+                       <li class="job-post__item">
+                           <div class="tip">
+                               <svg class="tip__icon">
+                                   <use xlink:href="/images/sprite.svg#icon-new-message"></use>
+                               </svg>
+                               <span class="tip__title">description</span>
+                               <svg class="tip__icon tip__icon--check">
+                                    <use xlink:href="/images/sprite.svg#icon-check_circle"></use>
+                                </svg>
+                           </div>
+                       </li>
+                       <li class="job-post__item">
+                           <div class="tip">
+                               <svg class="tip__icon">
+                                   <use xlink:href="/images/sprite.svg#icon-news"></use>
+                               </svg>
+                               <span class="tip__title">details</span>
+                               <svg class="tip__icon tip__icon--check">
+                                    <use xlink:href="/images/sprite.svg#icon-check_circle"></use>
+                                </svg>
+                           </div>
+                       </li>
+                       <li class="job-post__item">
+                           <div class="tip">
+                               <svg class="tip__icon">
+                                   <use xlink:href="/images/sprite.svg#icon-price-ribbon"></use>
+                               </svg>
+                               <span class="tip__title">expertise</span>
+                               <svg class="tip__icon tip__icon--check">
+                                    <use xlink:href="/images/sprite.svg#icon-check_circle"></use>
+                                </svg>
+                           </div>
+                       </li>
+                       <li class="job-post__item">
+                           <div class="tip">
+                               <svg class="tip__icon">
+                                   <use xlink:href="/images/sprite.svg#icon-magnifying-glass"></use>
+                               </svg>
+                               <span class="tip__title">visibility</span>
+                               <svg class="tip__icon tip__icon--check">
+                                    <use xlink:href="/images/sprite.svg#icon-check_circle"></use>
+                                </svg>
+                           </div>
+                       </li>
+                       <li class="job-post__item">
+                           <div class="tip">
+                               <svg class="tip__icon">
+                                   <use xlink:href="/images/sprite.svg#icon-credit"></use>
+                               </svg>
+                               <span class="tip__title">budget</span>
+                               <svg class="tip__icon tip__icon--check">
+                                    <use xlink:href="/images/sprite.svg#icon-check_circle"></use>
+                                </svg>
+                           </div>
+                       </li>
+                       <li class="job-post__item">
+                           <div class="tip">
+                               <svg class="tip__icon">
+                                   <use xlink:href="/images/sprite.svg#icon-check"></use>
+                               </svg>
+                               <span class="tip__title">review</span>    
+                           </div>
+                       </li>
+                   </ul>
+               </nav>
+            </aside>
+
+            <!-- JOB POST CONTENT -->
+            <div class="job-post__content">
+
+                <!-- JOB POST FORM -->
+                <form action="#" class="JPform">
+
+                    <!-- FORM PART 1 -->
+                    <div class="JPform__part JPform__part--1 JPform__part--active">
+
+                        <!-- A ROW OF WIDTH 114REM -->
+                    <div class="row">
+
+                        <!-- A SECTION OF THE FORM PART -->
+                        <div class="JPform__sect">
+
+                            <!-- SECTION HEADER -->
+                            <div class="JPform__header">
+                                <h2 class="JPform__title">
+                                    <span class="JPform__title--main">get started</span>
+                                    <span class="JPform__title--sub">Step 1 of 7</span>
+                                </h2>
+                            </div>
+                            <!-- A FORM GROUP -->
+                            <div class ="JPform__group">
+                                <label for="JPform-textArea" class="JPform__label">
+                                    Enter the name of your job post
+                                </label>
+                                <input type="text" class="JPform__textarea jp_name" id="JPform-textArea"/>
+
+                                <label class="JPform__label">
+                                    Here are some good examples
+                                </label>
+                                    <ul class="JPform__list">
+                                        <li class="JPform__item">Developer needed for creating a responsive WordPress Theme</li>
+                                        <li class="JPform__item">CAD designer to create 3D model of a residential building</li>
+                                        <li class="JPform__item">Need a designer for a new company logo</li>
+                                    </ul>
+                            </div>
+
+                        </div>
+
+                        <div class="JPform__sect">
+                            <div class="JPform__group">
+                                <label class="JPform__label">
+                                    Enter the name of your job post
+                                </label>
+                                <div class="selector selector--outer">
+                                    <span>Select category & subcategory</span>
+                                    <svg>
+                                        <use xlink:href="/images/sprite.svg#icon-chevron-small-down"></use>
+                                    </svg>
+                                </div>
+
+                                <!-- SELECTOR OVERLAY -->
+                                <div class="selector__overlay hidden">
+                                    <div class="selector__modal">
+                                        <!-- MODAL HEADER -->
+                                        <div class="selector__header u-margin-bottom-small">
+                                            <h2 class="JPform__title">
+                                                <span class="JPform__title--main">category selection</span>
+                                                </h2>
+                                                <span class="selector__close">&times;</span>
+                                        </div>
+
+                                        <!-- MODAL CONTENT -->
+                                        <div class="selector__content">
+                                            <label class="JPform__label">
+                                                Enter the name of your job post
+                                            </label>
+
+                                            <div class="selector__radio-group">
+                                                <input class="selector__radio" id="r1" type="radio" name="jobCategory" checked hidden>
+                                                <label for="r1" class="selector__radio-btn"></label>
+                                                <span class="selector__radio-text">Web Development</span>
+                                            </div>
+
+                                            <div class="selector__radio-group">
+                                                <input class="selector__radio" id="r2" type="radio" name="jobCategory" hidden>
+                                                <label for="r2" class="selector__radio-btn"></label>
+                                                <span class="selector__radio-text">Mobile app Development</span>
+                                            </div>
+
+                                            <div class="selector__radio-group">
+                                                <input class="selector__radio" id="r3" type="radio" name="jobCategory" hidden>
+                                                <label for="r3" class="selector__radio-btn"></label>
+                                                <span class="selector__radio-text">macOS Development</span>
+                                            </div>
+
+                                            <div class="selector__radio-group">
+                                                <input class="selector__radio" id="r4" type="radio" name="jobCategory" hidden>
+                                                <label for="r4" class="selector__radio-btn"></label>
+                                                <span class="selector__radio-text">mobile game Development</span>
+                                            </div>
+
+                                            <div class="selector__radio-group">
+                                                <input class="selector__radio" id="r5" type="radio" name="jobCategory" hidden>
+                                                <label for="r5" class="selector__radio-btn"></label>
+                                                <span class="selector__radio-text">windows Development</span>
+                                            </div>
+
+                                            <label class="JPform__label">
+                                                Or select a different category
+                                            </label>
+                                            <div class="selector selector--inner" >
+                                                <span>Select category & subcategory</span>
+                                                <svg>
+                                                        <use xlink:href="/images/sprite.svg#icon-chevron-small-down"></use>
+                                                    </svg>
+                                            </div>
+
+                                            <div class="option-container">
+                                                <span class="option">option 1</span>
+                                                <span class="option">option 2</span>
+                                                <span class="option">option 3</span>
+                                                <span class="option">option 4</span>
+                                                <span class="option">option 5</span>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- SECTION FOOTER -->
+                            <div class="JPform__footer">
+                                <button class="JPform__btn JPform__btn--exit" type="button">exit</button>
+                                <button class="JPform__btn JPform__btn--next" type="button">next</button>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <!-- FORM PART 2 -->
+                    <div class="JPform__part JPform__part--2">
+                            <!-- A ROW OF WIDTH 114REM -->
+                        <div class="row">
+
+                            <!-- A SECTION OF THE FORM PART -->
+                            <div class="JPform__sect">
+                                
+                                <!-- SECTION HEADER -->
+                                <div class="JPform__header">
+                                    <h2 class="JPform__title">
+                                    <span class="JPform__title--main">description</span>
+                                    <span class="JPform__title--sub">Step 2 of 7</span>
+                                    </h2>
+                                </div>
+
+                                    <!-- A FORM GROUP -->
+                                <div class ="JPform__group">
+
+                                    <label class="JPform__label" for="desc-area">
+                                        Description
+                                    </label>
+                                    <br/>
+                                    <label class="JPform__label">
+                                        A good description includes
+                                    </label>
+                                    <ul class="JPform__list u-margin-bottom-small">
+                                        <li class="JPform__item">What the deliverable is</li>
+                                        <li class="JPform__item">Type of freelancer you are looking for</li>
+                                        <li class="JPform__item">Anything unique about the project or theme</li>
+                                    </ul>
+
+                                    <textarea class="JPform__textarea JPform__textarea--long jp_desc" id="desc-area" minlength="50" maxlength="5000"></textarea>
+                                    <p class="JPform__item" id="counter">0/5000 characters (minimum 50)</p>
+
+                                    <label class="JPform__label  u-margin-bottom-medium">
+                                        Additional project files
+                                    </label>
+
+                                    <div class="JPform__drop-zone">
+                                        
+                                        <div class="JPform__content">
+                                            <span>
+                                                drag or <label class="content__text" for="projectFiles" style="cursor: pointer;">upload</label> project images
+                                            </span>
+                                            <input type="file" id="projectFiles" class="JPform__inputFile" hidden>
+                                        </div>
+                                        
+                                        <nav class="JPform__file-navigation">
+                                            <!-- <figure class="file" id="file-0">
+                                                    <figcaption class="file__name">File-1.docx</figcaption>
+                                
+                                                    <button type="button" class="button" title="delete file">
+                                                        <svg class="button__icon">
+                                                            <use xlink:href="../images/sprite.svg#icon-upload-to-cloud"></use>
+                                                        </svg>
+                                                    </button>
+                                            </figure>
+                                            <figure class="file" id="file-1">
+                                                    <figcaption class="file__name">File-2.docx</figcaption>
+                                
+                                                    <button type="button" class="button" title="delete file">
+                                                        <svg class="button__icon">
+                                                        <use xlink:href="../images/sprite.svg#icon-upload-to-cloud"></use>
+                                                        </svg>
+                                                    </button>
+                                            </figure> -->
+                                        </nav>
+                                    </div>
+
+
+                                </div>
+
+                                <!-- SECTION FOOTER -->
+                                <div class="JPform__footer">
+                                    <button class="JPform__btn JPform__btn--prev" type="button">prev</button>
+                                    <button class="JPform__btn JPform__btn--next" type="button">next</button>
+                                </div>
+
+                                
+                            </div>
+                        </div>
+                    </div>
+                  
+                    <!-- FORM PART 3 -->
+                    <div class="JPform__part JPform__part--3">
+                        <!-- A ROW OF WIDTH 114REM -->
+                        <div class="row">
+
+                            <!-- A SECTION OF THE FORM PART -->
+                            <div class="JPform__sect">
+                                
+                                <!-- SECTION HEADER -->
+                                <div class="JPform__header">
+                                    <h2 class="JPform__title">
+                                    <span class="JPform__title--main">details</span>
+                                    <span class="JPform__title--sub">Step 3 of 7</span>
+                                    </h2>
+                                </div>
+
+                                <!-- A FORM GROUP -->
+                                <div class ="JPform__group">
+                                    <label class="JPform__label">what type of project do you have?</label>
+                                    <div class="customRadio-group customRadio-group--1">
+                                        <div class="customRadio customRadio--1">
+                                            <input type="radio" name="projectType" id="cr1" class="customRadio__input" value="One-time project" hidden>
+                                            <label for="cr1" class="customRadio__label">
+                                                <svg class="customRadio__icon">
+                                                    <use xlink:href="/images/sprite.svg#icon-magnifying-glass"></use>
+                                                </svg>
+                                                <span class="customRadio__desc">One-time project</span>
+                                            </label>
+
+                                        </div>
+
+                                        <div class="customRadio customRadio--2">
+                                            <input type="radio" name="projectType" id="cr2" class="customRadio__input" value="Ongoing project" hidden>
+                                            <label for="cr2" class="customRadio__label">
+                                                <svg class="customRadio__icon">
+                                                    <use xlink:href="/images/sprite.svg#icon-news"></use>
+                                                </svg>
+                                                <span class="customRadio__desc">Ongoing project</span>
+                                            </label>
+
+                                        </div>
+                                        <div class="customRadio customRadio--3">
+                                            <input type="radio" name="projectType" id="cr3" class="customRadio__input" value="not sure" hidden>
+                                            <label for="cr3" class="customRadio__label">
+                                                <svg class="customRadio__icon">
+                                                    <use xlink:href="/images/sprite.svg#icon-help-with-circle"></use>
+                                                </svg>
+                                                <span class="customRadio__desc">i am not sure</span>
+                                            </label>
+
+                                        </div>
+                                    </div>
+
+                                    <label class="JPform__label">do you need to integrate with any APIs?</label>
+                                    <div class="customRadio-group customRadio-group--2">
+                                        <div class="customRadio customRadio--4">
+                                            <input type="radio" name="apiIntegration" id="cr4" class="customRadio__input" value="payment processor" hidden>
+                                            <label for="cr4" class="customRadio__label">
+                                                <span class="customRadio__title">payment processor</span>
+                                                <span class="customRadio__desc">paypal, stripe, etc</span>
+                                            </label>
+
+                                        </div>
+
+                                        <div class="customRadio customRadio--5">
+                                            <input type="radio" name="apiIntegration" id="cr5" class="customRadio__input" value="cloud storage" hidden>
+                                            <label for="cr5" class="customRadio__label">
+                                                <span class="customRadio__title">cloud storage</span>
+                                                <span class="customRadio__desc">dropbox, box, etc</span>
+                                            </label>
+
+                                        </div>
+                                        <div class="customRadio customRadio--6">
+                                            <input type="radio" name="apiIntegration" id="cr6" class="customRadio__input" value="social media" hidden>
+                                            <label for="cr6" class="customRadio__label">
+                                                <span class="customRadio__title">social media</span>
+                                                <span class="customRadio__desc">facebook, twitter, etc</span>
+                                            </label>
+
+                                        </div>
+                                        <div class="customRadio customRadio--7">
+                                            <input type="radio" name="apiIntegration" id="cr7" class="customRadio__input" value="other" hidden>
+                                            <label for="cr7" class="customRadio__label">
+                                                <span class="customRadio__title">other</span>
+                                                <span class="customRadio__desc">other APIs</span>
+                                            </label>
+
+                                        </div>
+                                    </div>
+
+                                    <label class="JPform__label">what stage is the project in?</label>
+                                    <div class="customRadio-group customRadio-group--3">
+                                        <div class="customRadio customRadio--8">
+                                            <input type="radio" name="projectStage" id="cr8" class="customRadio__input" value="i have specification" hidden>
+                                            <label for="cr8" class="customRadio__label">
+                                                <svg class="customRadio__icon">
+                                                    <use xlink:href="/images/sprite.svg#icon-text-document-inverted"></use>
+                                                </svg>
+                                                <span class="customRadio__desc">i have specification</span>
+                                            </label>
+
+                                        </div>
+
+                                        <div class="customRadio customRadio--9">
+                                            <input type="radio" name="projectStage" id="cr9" class="customRadio__input" value="i have design" hidden>
+                                            <label for="cr9" class="customRadio__label">
+                                                <svg class="customRadio__icon">
+                                                    <use xlink:href="/images/sprite.svg#icon-round-brush"></use>
+                                                </svg>
+                                                <span class="customRadio__desc">i have design</span>
+                                            </label>
+
+                                        </div>
+                                        <div class="customRadio customRadio--10">
+                                            <input type="radio" name="projectStage" id="cr10" class="customRadio__input" value="i have concept" hidden>
+                                            <label for="cr10" class="customRadio__label">
+                                                <svg class="customRadio__icon">
+                                                    <use xlink:href="/images/sprite.svg#icon-light-bulb"></use>
+                                                </svg>
+                                                <span class="customRadio__desc">i have concept</span>
+                                            </label>
+
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                                <!-- SECTION FOOTER -->
+                                <div class="JPform__footer">
+                                    <button class="JPform__btn JPform__btn--prev" type="button">prev</button>
+                                    <button class="JPform__btn JPform__btn--next" type="button">next</button>
+                                </div>
+
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FORM PART 4 -->
+                    <div class="JPform__part JPform__part--4">
+                        <!-- A ROW OF WIDTH 114REM -->
+                        <div class="row">
+
+                            <!-- A SECTION OF THE FORM PART -->
+                            <div class="JPform__sect">
+                                
+                                <!-- SECTION HEADER -->
+                                <div class="JPform__header">
+                                    <h2 class="JPform__title">
+                                    <span class="JPform__title--main">expertise</span>
+                                    <span class="JPform__title--sub">Step 4 of 7</span>
+                                    </h2>
+                                </div>
+
+                                <!-- A FORM GROUP -->
+                                <div class ="JPform__group">
+                                    <label class="JPform__label">what skills and expertise are most important to you?</label>
+                                    <div class="customCheck-group u-margin-bottom-medium">
+                                       <!-- CONTENT TO BE ADDED BY BUSINESS LOGIC -->
+                                       <!-- <div class="customCheck customCheck--%idx%  %size%">
+                                           <input type="checkbox" class="customCheck__input" name="skillSelect" id="check-%idx%" hidden>
+                                           <label class="customCheck__label">
+                                               %skill%
+                                               <button class="customCheck__iconBtn" type="button">
+                                                   <svg class="customCheck__icon">
+                                                        <use xlink:href="/images/sprite.svg#icon-circle-with-plus"></use>
+                                                    </svg>
+                                               </button>
+                                            </label>
+                                        </div> -->
+                                    </div>
+                                    <label class="JPform__label">what skills and expertise are most important to you?</label>
+
+                                    <div class="customCheck__addGroup">
+                                        <input type="text" class="customCheck__addInput" placeholder="Type to add a different skill">
+                                        <button class="customCheck__addBtn" type="button">
+                                            <svg class="customCheck__addIcon">
+                                                <use xlink:href="/images/sprite.svg#icon-circle-with-plus"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+
+
+                                <!-- SECTION FOOTER -->
+                                <div class="JPform__footer">
+                                    <button class="JPform__btn JPform__btn--prev" type="button">prev</button>
+                                    <button class="JPform__btn JPform__btn--next" type="button">next</button>
+                                </div>
+
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FORM PART 5 -->
+                    <div class="JPform__part JPform__part--5">
+                        <!-- A ROW OF WIDTH 114REM -->
+                        <div class="row">
+
+                            <!-- A SECTION OF THE FORM PART -->
+                            <div class="JPform__sect">
+                                
+                                <!-- SECTION HEADER -->
+                                <div class="JPform__header">
+                                    <h2 class="JPform__title">
+                                    <span class="JPform__title--main">Visibility</span>
+                                    <span class="JPform__title--sub">Step 5 of 7</span>
+                                    </h2>
+                                </div>
+
+                                <!-- A FORM GROUP -->
+                                <div class ="JPform__group">
+                                    <label class="JPform__label">who can see your job?</label>
+                                    <div class="customRadio-group customRadio-group--4">
+                                        <div class="customRadio customRadio--11">
+                                            <input type="radio" name="jobVisibility" id="cr11" class="customRadio__input" value="Anyone" hidden>
+                                            <label for="cr11" class="customRadio__label">
+                                                <svg class="customRadio__icon">
+                                                    <use xlink:href="/images/sprite.svg#icon-lock-open"></use>
+                                                </svg>
+                                                <span class="customRadio__title">Anyone</span>
+                                                <span class="customRadio__desc">Freelancers using LancersPoint and public search engines can find this job</span>
+                                            </label>
+
+                                        </div>
+
+                                        <div class="customRadio customRadio--12">
+                                            <input type="radio" name="jobVisibility" id="cr12" class="customRadio__input" value="invite-only" hidden>
+                                            <label for="cr12" class="customRadio__label">
+                                                <svg class="customRadio__icon">
+                                                    <use xlink:href="/images/sprite.svg#icon-lock"></use>
+                                                </svg>
+                                                <span class="customRadio__title">invite-only</span>
+                                                <span class="customRadio__desc">only freelancer you invite can find this job</span>
+                                            </label>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class ="JPform__group">
+                                    <label class="JPform__label">how many freelancers do you need for this job?</label>
+                                    <div class="customRadio-group customRadio-group--5">
+                                        <div class="customRadio customRadio--13">
+                                            <input type="radio" name="freelancerNumber" id="cr13" class="customRadio__input" value="One freelancer" hidden>
+                                            <label for="cr13" class="customRadio__label">
+                                                <svg class="customRadio__icon">
+                                                    <use xlink:href="/images/sprite.svg#icon-user"></use>
+                                                </svg>
+                                                <span class="customRadio__title">One freelancer</span>
+                                            </label>
+
+                                        </div>
+
+                                        <div class="customRadio customRadio--14">
+                                            <input type="radio" name="freelancerNumber" id="cr14" class="customRadio__input" value="More than one freelancer" hidden>
+                                            <label for="cr14" class="customRadio__label">
+                                                <svg class="customRadio__icon">
+                                                    <use xlink:href="/images/sprite.svg#icon-users"></use>
+                                                </svg>
+                                                <span class="customRadio__title">More than one freelancer</span>
+                                            </label>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- SECTION FOOTER -->
+                                <div class="JPform__footer">
+                                    <button class="JPform__btn JPform__btn--prev" type="button">prev</button>
+                                    <button class="JPform__btn JPform__btn--next" type="button">next</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                     <!-- FORM PART 6 -->
+                     <div class="JPform__part JPform__part--6 ">
+                        <!-- A ROW OF WIDTH 114REM -->
+                        <div class="row">
+
+                            <!-- A SECTION OF THE FORM PART -->
+                            <div class="JPform__sect">
+                                
+                                <!-- SECTION HEADER -->
+                                <div class="JPform__header">
+                                    <h2 class="JPform__title">
+                                    <span class="JPform__title--main">budget</span>
+                                    <span class="JPform__title--sub">Step 6 of 7</span>
+                                    </h2>
+                                </div>
+
+                                <!-- A FORM GROUP -->
+                                <div class ="JPform__group">
+                                    <label class="JPform__label">Who can see your job?</label>
+
+                                    <div class="customRadio-group customRadio-group--5">
+                                        <div class="customRadio customRadio--15">
+                                            <input type="radio" name="paymentMethod" id="cr15" class="customRadio__input" value="Pay by the hour" hidden>
+                                            <label for="cr15" class="customRadio__label">
+                                                <svg class="customRadio__icon">
+                                                    <use xlink:href="/images/sprite.svg#icon-stopwatch"></use>
+                                                </svg>
+                                                <span class="customRadio__title">Pay by the hour</span>
+                                                <span class="customRadio__desc">Popular for ongoing projects</span>
+                                            </label>
+
+                                        </div>
+
+                                        <div class="customRadio customRadio--16">
+                                            <input type="radio" name="paymentMethod" id="cr16" class="customRadio__input" value="Pay a fixed price" hidden>
+                                            <label for="cr16" class="customRadio__label">
+                                                <svg class="customRadio__icon">
+                                                    <use xlink:href="/images/sprite.svg#icon-price-tag"></use>
+                                                </svg>
+                                                <span class="customRadio__title">Pay a fixed price</span>
+                                                <span class="customRadio__desc">Popular for one time project</span>
+                                            </label>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="JPform__group pay-fixed-price hidden">
+                                    <label class="JPform__label">Do you have a specific budget?</label>
+                                    <div class="lancer-budget u-margin-bottom-small">
+                                        <svg class="lancer-budget__icon">
+                                            <use xlink:href="/images/sprite.svg#icon-credit"></use>
+                                        </svg>
+                                        <input type="number" class="lancer-budget__input" value="0">
+
+                                    </div>
+                                </div>
+
+                                <div class ="JPform__group">
+                                    <label class="JPform__label">What level of experience should your freelancer have?</label>
+                                    <div class="customRadio-group customRadio-group--6">
+                                        <div class="customRadio customRadio--17">
+                                            <input type="radio" name="freelancerExperience" id="cr17" class="customRadio__input" value="Entry" hidden>
+                                            <label for="cr17" class="customRadio__label">
+                                                <svg class="customRadio__icon">
+                                                    <use xlink:href="/images/sprite.svg#icon-credit"></use>
+                                                </svg>
+                                                <span class="customRadio__title">Entry</span>
+                                                <span class="customRadio__desc">Less than $20.00/hr</span>
+                                            </label>
+
+                                        </div>
+
+                                        <div class="customRadio customRadio--18">
+                                            <input type="radio" name="freelancerExperience" id="cr18" class="customRadio__input" value="Intermediate" hidden>
+                                            <label for="cr18" class="customRadio__label">
+                                                <div>
+                                                    <svg class="customRadio__icon">
+                                                        <use xlink:href="/images/sprite.svg#icon-credit"></use>
+                                                    </svg>
+                                                    <svg class="customRadio__icon">
+                                                        <use xlink:href="/images/sprite.svg#icon-credit"></use>
+                                                    </svg>
+                                                </div>
+                                                <span class="customRadio__title">Intermediate</span>
+                                                <span class="customRadio__desc">$20.00 - $40.00/hr</span>
+                                            </label>
+                                        </div>
+
+                                        <div class="customRadio customRadio--19">
+                                            <input type="radio" name="freelancerExperience" id="cr19" class="customRadio__input" value="Expert" hidden>
+                                            <label for="cr19" class="customRadio__label">
+                                                <div>
+                                                    <svg class="customRadio__icon">
+                                                        <use xlink:href="/images/sprite.svg#icon-credit"></use>
+                                                    </svg>
+                                                    <svg class="customRadio__icon">
+                                                        <use xlink:href="/images/sprite.svg#icon-credit"></use>
+                                                    </svg>
+                                                    <svg class="customRadio__icon">
+                                                        <use xlink:href="/images/sprite.svg#icon-credit"></use>
+                                                    </svg>
+                                                </div>
+                                                <span class="customRadio__title">Expert</span>
+                                                <span class="customRadio__desc">More than $20.00/hr</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class ="JPform__group pay-per-hour hidden">
+                                    <label class="JPform__label">How much do you expect this project to last?</label>
+                                    <div class="customRadio-group customRadio-group--7">
+                                        <div class="customRadio customRadio--20">
+                                            <input type="radio" name="timeExpectation" id="cr20" class="customRadio__input" value="Less than 1 month" hidden>
+                                            <label for="cr20" class="customRadio__label">
+                                                <span class="customRadio__desc">Less than 1 month</span>
+                                            </label>
+
+                                        </div>
+
+                                        <div class="customRadio customRadio--21">
+                                            <input type="radio" name="timeExpectation" id="cr21" class="customRadio__input" value="1 to 3 months" hidden>
+                                            <label for="cr21" class="customRadio__label">
+                                                <span class="customRadio__desc">1 to 3 months</span>
+                                            </label>
+                                        </div>
+
+                                        <div class="customRadio customRadio--22">
+                                            <input type="radio" name="timeExpectation" id="cr22" class="customRadio__input" value="More than 3 months" hidden>
+                                            <label for="cr22" class="customRadio__label">
+                                                <span class="customRadio__desc">More than 3 months</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class ="JPform__group pay-per-hour hidden">
+                                    <label class="JPform__label">do you have a time requirement for this project?</label>
+                                    <div class="customRadio-group customRadio-group--7">
+                                        <div class="customRadio customRadio--23">
+                                            <input type="radio" name="timeRequirement" id="cr23" class="customRadio__input" value="More than 30 hrs/week" hidden>
+                                            <label for="cr23" class="customRadio__label">
+                                                <span class="customRadio__desc">More than 30 hrs/week</span>
+                                            </label>
+
+                                        </div>
+
+                                        <div class="customRadio customRadio--24">
+                                            <input type="radio" name="timeRequirement" id="cr24" class="customRadio__input" value="Less than 30 hrs/week" hidden>
+                                            <label for="cr24" class="customRadio__label">
+                                                <span class="customRadio__desc">Less than 30 hrs/week</span>
+                                            </label>
+                                        </div>
+
+                                        <div class="customRadio customRadio--25">
+                                            <input type="radio" name="timeRequirement" id="cr25" class="customRadio__input" value="i don't know yet" hidden>
+                                            <label for="cr25" class="customRadio__label">
+                                                <span class="customRadio__desc">i don't know yet</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- SECTION FOOTER -->
+                                <div class="JPform__footer">
+                                    <button class="JPform__btn JPform__btn--prev" type="button">prev</button>
+                                    <button class="JPform__btn JPform__btn--next" type="button">next</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FORM PART 7(REVIEW) -->
+                    <div class="JPform__part JPform__part--7">
+                        <div class="row">
+
+                            <!-- A SECTION OF THE FORM PART -->
+                            <div class="JPform__sect">
+                                
+                                <!-- SECTION HEADER -->
+                                <div class="JPform__header">
+                                    <h2 class="JPform__title">
+                                    <span class="JPform__title--main">review and post</span>
+                                    </h2>
+                                </div>
+
+                                <!-- A FORM GROUP -->
+                                <div class ="JPform__group">
+                                   <div class="revBox">
+                                       <div class="revBox__header">
+                                           <h2 class="revBox__title--main">Title</h2>
+                                           <button class="revBox__editBtn" type="button" data-edit="0" title="edit title">
+                                               <svg class="revBox__icon">
+                                                   <use xlink:href="/images/sprite.svg#icon-pencil"></use>
+                                               </svg>
+                                           </button>
+                                       </div>
+
+                                       <div class="revBox__content">
+                                           <h4 class="revBox__title--sub">job post name</h4>
+                                           <div class="revBox__desc">desc</div>
+                                       </div>
+
+                                       <div class="revBox__content">
+                                            <h4 class="revBox__title--sub">job category</h4>
+                                            <div class="revBox__desc">desc</div>
+                                        </div>
+                                   </div>
+                                </div>
+
+                                
+                            </div>
+
+                            <div class="JPform__sect">
+                                <div class ="JPform__group">
+                                    <div class="revBox">
+                                        <div class="revBox__header">
+                                            <h2 class="revBox__title--main">Description</h2>
+                                            <button class="revBox__editBtn" type="button" data-edit="1" title="edit title">
+                                                <svg class="revBox__icon">
+                                                    <use xlink:href="/images/sprite.svg#icon-pencil"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+ 
+                                        <div class="revBox__content">
+                                            <h4 class="revBox__title--sub">description</h4>
+                                            <div class="revBox__desc">desc</div>
+                                        </div>
+                                    </div>
+                                 </div>
+                            </div>
+
+                            <div class="grid-3 u-margin-bottom-medium">
+                                <div class="JPform__sect">
+                                    <div class ="JPform__group">
+                                        <div class="revBox">
+                                            <div class="revBox__header">
+                                                <h2 class="revBox__title--main">Details</h2>
+                                                <button class="revBox__editBtn" type="button" data-edit="2" title="edit details">
+                                                    <svg class="revBox__icon">
+                                                        <use xlink:href="/images/sprite.svg#icon-pencil"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+    
+                                            <div class="revBox__grid">
+                                                <div class="revBox__content">
+                                                    <h4 class="revBox__title--sub">type of project</h4>
+                                                    <div class="revBox__desc">desc</div>
+                                                </div>
+                                                <div class="revBox__content">
+                                                    <h4 class="revBox__title--sub">project lifecycle</h4>
+                                                    <div class="revBox__desc">desc</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                     </div>
+    
+                                </div>
+    
+                                <div class="JPform__sect">
+                                    <div class ="JPform__group">
+                                        <div class="revBox">
+                                            <div class="revBox__header">
+                                                <h2 class="revBox__title--main">Expertise</h2>
+                                                <button class="revBox__editBtn" type="button" data-edit="3" title="edit description">
+                                                    <svg class="revBox__icon">
+                                                        <use xlink:href="/images/sprite.svg#icon-pencil"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+    
+                                            <div class="revBox__content">
+                                                <h4 class="revBox__title--sub">Skills required</h4>
+                                                <ul class="revBox__desc"></ul>
+                                            </div>
+                                          
+                                        </div>
+                                     </div>
+                                </div>
+                                
+                                <div class="JPform__sect">
+                                    <div class ="JPform__group">
+                                        <div class="revBox">
+                                            <div class="revBox__header">
+                                                <h2 class="revBox__title--main">Visibility</h2>
+                                                <button class="revBox__editBtn" type="button" data-edit="3" title="edit description">
+                                                    <svg class="revBox__icon">
+                                                        <use xlink:href="/images/sprite.svg#icon-pencil"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+    
+                                            <div class="revBox__content">
+                                                <h4 class="revBox__title--sub">who can see your job?</h4>
+                                                <div class="revBox__desc">desc</div>
+                                            </div>
+                                            <div class="revBox__content">
+                                                <h4 class="revBox__title--sub">freelancers needed</h4>
+                                                <div class="revBox__desc">desc</div>
+                                            </div>
+                                        </div>
+                                     </div>
+                                </div>
+                               
+                            </div>
+
+                            <div class="JPform__sect">
+                                <div class ="JPform__group">
+                                    <div class="revBox">
+                                        <div class="revBox__header">
+                                            <h2 class="revBox__title--main">Budget</h2>
+                                            <button class="revBox__editBtn" type="button" data-edit="3" title="edit description">
+                                                <svg class="revBox__icon">
+                                                    <use xlink:href="/images/sprite.svg#icon-pencil"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+
+                                        <div class="revBox__content">
+                                            <h4 class="revBox__title--sub">payment type</h4>
+                                            <div class="revBox__desc">desc</div>
+                                        </div>
+                                        <div class="revBox__content">
+                                            <h4 class="revBox__title--sub">freelancers experience</h4>
+                                            <div class="revBox__desc">desc</div>
+                                        </div>
+                                        <div class="revBox__content">
+                                            <h4 class="revBox__title--sub">project life</h4>
+                                            <div class="revBox__desc">desc</div>
+                                        </div>
+
+                                    </div>
+                                 </div>
+                                 <!-- SECTION FOOTER -->
+                                 <div class="JPform__footer">
+                                   <button class="JPform__btn JPform__btn--prev" type="button">prev</button>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+        <section>
+            <button>
+                <a href="./current_job.html">Press here to next</a>
+            </button>
+        </section>
+    </main>
+    
+    <script src="/js/postJob.js"></script>
+    <script src="/js/smallDrag.js"></script>
+
+</body>
+</html>

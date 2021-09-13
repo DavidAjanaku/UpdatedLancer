@@ -1,0 +1,612 @@
+/************** PAYMENT_METHOD *************/
+
+.payment-method-main{
+    background-color: rgb(253, 253, 253);
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .payment-method-main .payment-method-container{
+    width: 70%;
+    padding: 20px;
+    margin: auto;
+    display: flex;
+   
+  }
+  
+  .payment-method-main .payment-method-container .PM_1{
+      padding: 20px;
+      width: 50%;
+  }
+  
+  .payment-method-main .payment-method-container .PM_1 h1{
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 3rem;
+  }
+  
+  .payment-method-main .payment-method-container .PM_1 .debit_credit_card-main{
+      width: 100%;
+      border: 2px solid#333;
+      border-radius: 5px;
+      padding: 10px;
+      margin-bottom: 20px;
+  }
+  
+  .payment-method-main .payment-method-container .PM_1 .debit_credit_card-main .dcc-container{
+      display: flex;
+  }
+  
+  .payment-method-main .payment-method-container .PM_1 .debit_credit_card-main .dcc-container .dcc{
+      display: flex;
+  }
+  
+  .payment-method-main .payment-method-container .PM_1 .debit_credit_card-main .dcc-container .dcc .circle{
+      width: 40px;
+      height: 40px;
+      border-radius: 100px;
+      padding: 3px;
+      margin: 10px;
+      border:1px solid var(--color-primary);
+  }
+  
+  .payment-method-main .payment-method-container .PM_1 .debit_credit_card-main .dcc-container .dcc .circle .inner-circle{
+    border-radius: 100px;
+    background: var(--color-primary);
+    width: 100%;
+    height: 100%;
+  }
+  
+  .payment-method-main .payment-method-container .PM_1 .debit_credit_card-main .dcc-container .dcc h2{
+      margin: 10px;
+      color: #333;
+      font-size: 2rem;
+  }
+  
+  .payment-method-main .payment-method-container .PM_1 .debit_credit_card-main .dcc-container h6{
+    margin-left: auto;
+    margin-top: 20px;
+  }
+  
+  .payment-method-main .payment-method-container .PM_1 .debit_credit_card-main .form-container{
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 40px;
+  }
+  
+  .payment-method-main .payment-method-container .PM_1 .debit_credit_card-main .form-container form{
+      display: flex;
+      width: 100%;
+  }
+  
+  .payment-method-main .payment-method-container .PM_1 .debit_credit_card-main .form-container form input{
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-bottom: 2px solid rgb(155, 155, 155);
+    margin-top: 40px;
+    width: 100%;
+    display: block;
+    background-color: transparent;
+  }
+  
+  .payment-method-main .payment-method-container .PM_1 .debit_credit_card-main .form-container form .form-content-1{
+      width: 70%;
+      padding: 10px;
+  }
+  
+  .payment-method-main .payment-method-container .PM_1 .debit_credit_card-main .form-container form .form-content-2{
+    width: 30%;
+    padding: 10px;
+    margin-left: auto;
+  }
+  
+  .payment-method-main .payment-method-container .PM_1 .PM_2-container{
+    width: 100%;
+    border: 1.5px solid rgb(161, 160, 160);
+    border-radius: 2px;
+    
+  }
+  
+  .payment-method-main .payment-method-container .PM_1 .PM_2-container .PM_2-container-content{
+      padding: 20px;
+      font-size: 2rem;
+      width: 100%;
+      display: flex;
+      border-bottom: 1px solid skyblue;
+  }
+  
+  .payment-method-main .payment-method-container .PM_1 .PM_2-container .PM_2-container-content label{
+     width: 40px;
+     height: 40px;
+     padding: 15px;
+     border-radius: 50%;
+     border: 1px solid #28B34B;
+     margin-right: 40px;
+      
+  }
+  
+  .payment-method-main .payment-method-container .PM_1 .PM_2-container .PM_2-container-content label input{
+    outline: none;
+    appearance: none;
+  }
+  
+  
+  .payment-method-main .payment-method-container .PM_1 .PM_2-container .PM_2-container-content label input[type='radio']:after{
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    position: relative;
+    top: -11px;
+    left: -11px;
+    background-color: transparent;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+      z-index: 1;
+      
+  }
+  
+  .payment-method-main .payment-method-container .PM_1 .PM_2-container .PM_2-container-content label input[type='radio']:checked:after{
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    top: -11px;
+    left: -11px;
+    position: relative;
+    background-color: #28B34B;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+  }
+  
+  .payment-method-main .payment-method-container .PM_1 .PM_2-container .PM_2-container-content h3{
+    color: #333;
+  }
+  
+  
+  .payment-method-main .payment-method-container .PM_1 .PM_2-container .PM_2-container-content i{
+    margin-left: auto;
+    font-size: 2.6rem;
+    color: #333;
+    
+  }
+  
+  .payment-method-main .payment-method-container .PM_2-deposit{
+    width: 50%;
+    margin-left: auto;
+    border-radius: 2px;
+    padding: 20px;
+    padding-top: 100px;
+  }
+  
+  .payment-method-main .payment-method-container .PM_2-deposit .PM_2-deposit-container{
+    width: 100%;
+    border: 1.5px solid rgb(26, 25, 25);
+    border-radius: 2px;
+    padding: 20px;
+  }
+  
+  .payment-method-main .payment-method-container .PM_2-deposit .PM_2-deposit-container form {
+  
+  }
+  
+  .payment-method-main .payment-method-container .PM_2-deposit .PM_2-deposit-container form .input-container{
+    line-height: 70px;
+    display: flex;
+  }
+  
+  .payment-method-main .payment-method-container .PM_2-deposit .PM_2-deposit-container form .input-container label{
+    font-size: 2rem;
+    
+  }
+  
+  .payment-method-main .payment-method-container .PM_2-deposit .PM_2-deposit-container form .input-container select{
+    margin-left: auto;
+    width: 60%;
+    height: 50px;
+    margin-top: 10px;
+    font-size: 2rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    border-bottom: 2px solid rgb(161, 160, 160);
+  }
+  
+  
+  .payment-method-main .payment-method-container .PM_2-deposit .PM_2-deposit-container form .input-container .input-content{
+    margin-left: auto;
+    display: flex;
+    width: 60%;
+  }
+  
+  .payment-method-main .payment-method-container .PM_2-deposit .PM_2-deposit-container form .input-container .input-content span{
+    font-size: 2rem;
+    color: rgb(8, 8, 8);
+  }
+  
+  .payment-method-main .payment-method-container .PM_2-deposit .PM_2-deposit-container form .input-container .input-content input{
+    width: 100%;
+    height: 50px;
+    padding-top: 15px;
+    padding-left: 15px;
+    outline: none;
+    border: none;
+    font-size: 2rem;
+    background-color: transparent;
+    border-bottom: 2px solid rgb(161, 160, 160);
+  }
+  
+  .payment-method-main .payment-method-container .PM_2-deposit .PM_2-deposit-container form .processing-fee-container{
+    display: flex;
+    margin-top: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1.78px solid rgb(43, 156, 231);
+  }
+  
+  .payment-method-main .payment-method-container .PM_2-deposit .PM_2-deposit-container form .processing-fee-container .pf{
+      display: flex;
+  }
+  
+  .payment-method-main .payment-method-container .PM_2-deposit .PM_2-deposit-container form .processing-fee-container .pf h2{
+    font-weight: 100;
+    margin-right: 20px;
+  }
+  
+  .payment-method-main .payment-method-container .PM_2-deposit .PM_2-deposit-container form .processing-fee-container .pf i{
+    margin-top: 10px;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .payment-method-main .payment-method-container .PM_2-deposit .PM_2-deposit-container form .processing-fee-container  .pf-amount{
+    margin-left: auto;
+    font-size: 2.2rem;
+    color: #333;
+    font-weight: 600;
+  }
+  
+  .payment-method-main .payment-method-container .PM_2-deposit .PM_2-deposit-container form .total-container{
+      display: flex;
+      margin-top: 20px;
+  }
+  
+  .payment-method-main .payment-method-container .PM_2-deposit .PM_2-deposit-container form .total-container h1{
+    font-size: 2.5rem;
+  }
+  
+  .payment-method-main .payment-method-container .PM_2-deposit .PM_2-deposit-container form .total-container .pf-amount{
+    margin-left: auto;
+    font-size: 2.2rem;
+    color: #333;
+    font-weight: 600;
+  }
+  
+  .payment-method-main .payment-method-container .PM_2-deposit .PM_2-deposit-container form .button-container{
+    margin: auto;
+    padding: 10px;
+    margin-top: 10px;
+    width: 70%;
+  }
+  
+  .payment-method-main .payment-method-container .PM_2-deposit .PM_2-deposit-container form .button-container button{
+    margin: 0 auto;
+    padding: 15px 60px;
+    border-radius: 100px;
+    border: none;
+    background: #28B34B;
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+  
+  }
+  
+  .payment-method-main .payment-method-container .PM_2-deposit .PM_2-deposit-container form .agreement-check-box-container{
+    display: flex;
+    margin-top: 20px;
+  }
+  
+  .payment-method-main .payment-method-container .PM_2-deposit .PM_2-deposit-container form .agreement-check-box-container .check{
+      margin-right: 20px;
+      margin-top: 5px;
+  }
+  
+  .payment-method-main .payment-method-container .PM_2-deposit .PM_2-deposit-container form .agreement-check-box-container input[type='checkbox']:after{
+    padding: 3px;
+    height: 20px;
+    width: 18px;
+    border-radius: 4px;
+    top: -2px;
+    left: -1px;
+    text-align: center;
+    color: rgb(54, 39, 39);
+    border: 1px solid rgb(102, 102, 102);
+    position: relative;
+    background-color: #fafafa;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+  }
+  
+  .payment-method-main .payment-method-container .PM_2-deposit .PM_2-deposit-container form .agreement-check-box-container input[type='checkbox']:checked:after{
+    padding: 3px;
+    border-radius: 4px;
+    border: none;
+    height: 20px;
+    width: 18px;
+    top: -2px;
+    left: -1px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    background-color: #28B34B;
+    content: '✓';
+    display: inline-block;
+    visibility: visible;
+  }
+  
+  .payment-method-main .payment-method-container .PM_2-deposit .PM_2-deposit-container form .agreement-check-box-container h4{
+    font-size: 1.7rem;
+  }
+  
+  @media only screen and (max-width: 1610px){
+    .payment-method-main .payment-method-container{
+      width: 80%;
+    }
+  }
+  
+  @media only screen and (max-width: 1434px){
+    .payment-method-main .payment-method-container{
+      width: 90%;
+    }
+  }
+  
+  @media only screen and (max-width: 1266px){
+    .payment-method-main .payment-method-container{
+      width: 100%;
+      padding: 20px;
+      margin: auto;
+      display: flex;
+     
+    }
+  }
+  
+  @media only screen and (max-width: 1140px){
+    .payment-method-main .payment-method-container .PM_1{
+      width: 45%;
+    }
+  
+    .payment-method-main .payment-method-container .PM_2-deposit{
+      width: 55%;
+    }
+  }
+  
+  @media only screen and (max-width: 1092px){
+    html {
+      font-size: 52.5%;
+      scroll-behavior: smooth;
+    }
+  
+    .payment-method-main .payment-method-container .PM_2-deposit .PM_2-deposit-container form .button-container button{
+      font-size: 1.3rem;
+    
+    }
+    
+  }
+  
+  @media only screen and (max-width: 948px){
+    .payment-method-main .payment-method-container{
+      padding: 10px;
+    }
+  
+    .payment-method-main .payment-method-container .PM_2-deposit .PM_2-deposit-container form .button-container button{
+      font-size: 1.1rem;
+    
+    }
+    
+  }
+  
+  @media only screen and (max-width: 895px){
+    html {
+      font-size: 62.5%;
+      scroll-behavior: smooth;
+    }
+    
+    .payment-method-main .payment-method-container{
+      width: 80%;
+      padding: 20px;
+      margin: auto;
+      display: block;
+    }
+  
+    .payment-method-main .payment-method-container .PM_1{
+      width: 100%;
+    }
+  
+    .payment-method-main .payment-method-container .PM_2-deposit{
+      width: 100%;
+      padding-top: 0px;
+    }
+    
+  }
+  
+  @media only screen and (max-width: 759px){
+    html {
+      font-size: 62.5%;
+      scroll-behavior: smooth;
+    }
+    
+    .payment-method-main .payment-method-container{
+      width: 90%;
+      padding: 20px;
+      margin: auto;
+      display: block;
+    }
+  
+    .payment-method-main .payment-method-container .PM_1{
+      width: 100%;
+    }
+  
+    .payment-method-main .payment-method-container .PM_2-deposit{
+      width: 100%;
+      padding-top: 0px;
+    }
+    
+  }
+  
+  @media only screen and (max-width: 687px){
+    html {
+      font-size: 62.5%;
+      scroll-behavior: smooth;
+    }
+    
+    .payment-method-main .payment-method-container{
+      width: 100%;
+      padding: 20px;
+      margin: auto;
+      display: block;
+    }
+  
+    .payment-method-main .payment-method-container .PM_1{
+      width: 100%;
+    }
+  
+    .payment-method-main .payment-method-container .PM_2-deposit{
+      width: 100%;
+      padding-top: 0px;
+    }
+    
+  }
+  
+  @media only screen and (max-width: 615px){
+    html {
+      font-size: 62.5%;
+      scroll-behavior: smooth;
+    }
+    
+    .payment-method-main .payment-method-container{
+      width: 100%;
+      padding: 10px;
+      margin: auto;
+      display: block;
+    }
+    
+  }
+  
+  @media only screen and (max-width: 594px){
+    html {
+      font-size: 62.5%;
+      scroll-behavior: smooth;
+    }
+  
+    .payment-method-main{
+      background-color: rgb(253, 253, 253);
+      width: 100%;
+      padding: 10px;
+    }
+    
+    .payment-method-main .payment-method-container{
+      width: 100%;
+      padding: 10px;
+      margin: auto;
+      display: block;
+    }
+    
+  }
+  
+  @media only screen and (max-width: 571px){
+    html {
+      font-size: 52.5%;
+      scroll-behavior: smooth;
+    }
+    
+  }
+  
+  @media only screen and (max-width: 500px){
+    html {
+      font-size: 42.5%;
+      scroll-behavior: smooth;
+    }
+  
+    .payment-method-main .payment-method-container .PM_1 .debit_credit_card-main .form-container form{
+      display: block;
+      width: 100%;
+  }
+  
+  .payment-method-main .payment-method-container .PM_1 .debit_credit_card-main .form-container form input{
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-bottom: 2px solid rgb(155, 155, 155);
+    margin-top: 40px;
+    width: 100%;
+    display: block;
+    background-color: transparent;
+  }
+  
+  .payment-method-main .payment-method-container .PM_1 .debit_credit_card-main .form-container form .form-content-1{
+      width: 100%;
+      padding: 10px;
+  }
+  
+  .payment-method-main .payment-method-container .PM_1 .debit_credit_card-main .form-container form .form-content-2{
+    width: 100%;
+    padding: 10px;
+    margin-left: auto;
+  }
+  
+  .payment-method-main .payment-method-container .PM_2-deposit .PM_2-deposit-container form .button-container{
+    width: 90%;
+  }
+  
+  .payment-method-main .payment-method-container .PM_2-deposit .PM_2-deposit-container form .button-container button{
+    padding: 15px 10px;
+    font-size: 1.5rem;
+  }
+    
+  }
+  
+  @media only screen and (max-width: 411px){
+    html {
+      font-size: 38.5%;
+      scroll-behavior: smooth;
+    }
+  
+    .payment-method-main .payment-method-container .PM_1 .debit_credit_card-main .form-container form{
+      display: block;
+      width: 100%;
+  }
+  
+  .payment-method-main .payment-method-container .PM_1 .debit_credit_card-main .form-container form input{
+    outline: none;
+    border: none;
+    padding: 5px;
+    border-bottom: 2px solid rgb(155, 155, 155);
+    margin-top: 40px;
+    width: 100%;
+    display: block;
+    background-color: transparent;
+  }
+  
+  .payment-method-main .payment-method-container .PM_1 .debit_credit_card-main .form-container form .form-content-1{
+      width: 100%;
+      padding: 5px;
+  }
+  
+  .payment-method-main .payment-method-container .PM_1 .debit_credit_card-main .form-container form .form-content-2{
+    width: 100%;
+    padding: 5px;
+    margin-left: auto;
+  }
+  
+  .payment-method-main{
+    padding: 5px;
+  }
+  
+  .payment-method-main .payment-method-container{
+    padding: 0px;
+  }
+    
+  
+  }

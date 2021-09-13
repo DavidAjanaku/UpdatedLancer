@@ -1,0 +1,241 @@
+.JPform{
+    &__part{
+        display: none;
+    }
+    &__part--active{
+        display: block;
+    }
+
+    &__sect{
+        background-color: #fff;
+        border-radius:3px ;
+        box-shadow: 0 .2rem .4rem #ccc;
+        &:not(:last-child){
+            margin-bottom: 2.5rem;
+        }
+    }
+    
+    &__sect>*{
+        padding:2rem .8em;
+    }
+
+    &__header,
+    &__footer{
+        background-color: #fbfbfb;
+        display: flex;
+        align-items: center;
+    }
+    
+    &__header{border-bottom: 1px solid #eae9e9;}
+    &__footer{border-top: 1px solid #eae9e9;}
+    
+
+    &__title{
+        &--main,
+        &--sub{
+            line-height: 1.3;
+            display: block;
+        }
+        
+        &--main{
+            text-transform: capitalize;
+        }
+
+        &--sub{
+            font-size: 1.2rem;
+        }
+    }
+
+    
+
+    &__group:not(:last-child){
+        margin-bottom: .8rem;
+    }
+
+    &__label{
+        font-size: 1.3rem;
+        font-weight: 700;
+        display: inline-block;
+        margin-bottom: .8rem;
+    }
+
+    &__textarea,
+    &__input{
+        width: 80%;
+        outline-width: 1px;
+        outline-color: var(--color-primary);
+        font-family: var(--default-font);
+    }
+
+    &__textarea{
+        display: block;
+        margin-bottom: .8rem;
+        border-radius: 3px;
+        border: 1px solid #ccc;
+        height: 5rem;
+        resize: none;
+        padding: .5rem;
+
+        &::-webkit-scrollbar{
+            width: 1.3rem;
+            
+        }
+        
+        &::-webkit-scrollbar-track{
+            background-color: var(--color-light-grey);
+            border-radius: 0 3px 3px 0;
+        }
+
+        &::-webkit-scrollbar-thumb{
+            background-color: var(--color-primary);
+            border-radius: 0 3px 3px 0;
+            cursor: pointer;
+        }
+
+        &--long{
+            height: 15rem;
+        }
+    }
+
+
+    &__list{
+        padding: 0 1em;
+    }
+    &__item{
+        font-size: 1.2rem;
+    }
+
+    &__btn{
+        font-family: var(--default-font);
+        cursor: pointer;
+        text-transform: capitalize;
+        border:  2px solid transparent;
+        box-shadow: 0 .2rem .4rem #ccc;
+        padding: .8rem 2.5rem;
+
+
+        &:not(:last-child){
+            margin-right: 1.5rem;
+        }
+
+        &:not(:disabled) &__btn--next{
+            background-color: var(--color-primary);
+            color: #fff;
+        }
+
+        &--exit{
+            background-color: #fff;
+            color: var(--color-primary);
+        }
+
+        &--next{
+            background-color: var(--color-primary);
+            color: #fff;
+            transition: all .3s;
+
+            &:hover{
+                color: var(--color-primary);
+                border-color: currentColor;
+                background-color: #fff;
+            }
+        }
+    }
+
+}
+
+#counter{text-align: right; width: 80%;}
+
+
+
+
+
+
+
+
+/*
+ JPform DRAG AND DROP
+ */
+
+
+.JPform__drop-zone{
+    padding: 2rem 0;
+    width: 80%;
+    height:fit-content ;
+    border:  2px dashed var(--color-accent);
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+    position: relative;
+
+    &.active{
+    border:  2px solid var(--color-accent);
+
+    }
+
+}
+
+
+.JPform__drop-zone.active .JPform__content{
+    display: none;
+}
+
+.JPform__drop-zone.active .JPform__file-navigation{
+    display: flex;
+}
+
+.JPform__content{
+    width: fit-content;
+    height: fit-content;
+    overflow: auto;
+    text-align: center;
+    padding: 2rem;
+
+    &__text{
+        margin: 0 auto;
+        font-size: 1.3rem;
+        color: var(--color-primary);
+        width: 70%;
+    }
+}
+
+.JPform__file-navigation{
+    display: none;
+    width: 100%;
+    height: fit-content;
+    overflow-y: auto;
+    align-items: center;
+    flex-direction: column;
+}
+
+.file{
+    padding: 1rem 1rem;
+    width: 90%;
+  background-color: var(--color-primary);
+    color: #fff;
+    display: flex;
+
+    &:not(:last-child){
+        margin-bottom: 1rem;
+    }
+
+}
+
+.file:hover > .button{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.button{
+    opacity: 0;
+    transform: translateX(5px);
+    margin-left: auto;
+    border: none;
+    background-color: transparent;
+    transition: all .2s;
+    cursor: pointer;
+   &__icon{
+        width: 3rem;
+        height: 2rem;
+        fill: #fff;
+   }
+}

@@ -1,0 +1,36 @@
+.progress{
+    width: 100%;
+    padding: 3rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    &__disabled,
+    &__enabled{
+        height: 3px;
+        position: absolute;
+    }
+    
+    &__disabled{
+        width: 100%;
+        background-color: var(--color-accent);
+        z-index: -2;
+    }
+    
+    &__enabled{
+        transition: all .2s ease-in;
+        background-color: var(--color-primary);
+        z-index: -1;
+    }
+
+    &__point{
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 50%;
+        background-color: var(--color-accent);
+        &.active{
+            background-color: var(--color-primary);
+        }
+    }
+}

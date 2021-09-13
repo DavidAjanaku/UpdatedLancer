@@ -1,0 +1,60 @@
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 40rem;
+    gap: 8px;
+    justify-content: center;
+
+    @media screen and (max-width:760px){
+        grid-template-columns: 40rem;
+        row-gap: 1em;
+    }
+
+
+    @include respond(phone){
+        grid-template-columns: 80%;
+    }
+}
+
+.card{
+    background-color: #ffffff;
+    
+    &__img{
+        width: 100%;
+        height: 15rem;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    &__title{
+        text-align: center;
+        font-weight: 600;
+    }
+
+    &__content{
+        margin:  0 auto;
+        padding:0 2rem 2rem;
+    }
+
+    &__desc{
+        font-size: 1.4rem;
+        -webkit-line-clamp: 5;
+        display: -webkit-box;
+        line-height: 1.65;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    &__price{
+        &::before{
+            content:'\20A6';
+            display: inline-block;
+            margin-right: .5rem;
+        }
+
+        display:block;
+        text-align: right;
+    }
+
+}

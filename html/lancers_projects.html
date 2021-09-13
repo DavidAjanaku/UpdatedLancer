@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Jobs</title>
+    <link rel="stylesheet" href="../css/user_css/lancers-profile-page.css">
+
+    <link rel="shortcut icon" href="../images/lancerspoint-2.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/user_css/search.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+</head>
+
+<body>
+    <input type="checkbox" id="toggleNav" class="hamburger">
+
+    <label for="toggleNav" class="hamburger__button">
+        <figure>
+            <span class="hamburger__line"></span>
+            <span class="hamburger__line"></span>
+            <span class="hamburger__line"></span>
+        </figure>
+    </label>
+    <div class="overlay"></div>
+    <header class="navigation  mobile--hide">
+        <img src="../images/logos/1615836166736_lanserpoint-point-long.png" alt="logo" class="navigation__logo">
+        <form action="#" class="navigation__search">
+            <input type="text" class="navigation__input" placeholder="Search for a skill...">
+            <button class="navigation__search-btn">
+                <svg class="navigation__search-icon">
+                    <use xlink:href="images/sprite.svg#icon-magnifying-glass"></use>
+                </svg>
+            </button>
+        </form>
+
+        <nav>
+            <ul class="navigation__list">
+                <li class="navigation__item">
+                    <a href="" class="navigation__link">find jobs</a>
+                    <button class="navigation__dropdown-btn">
+                        <svg class="navigation__dropdown-icon">
+                            <use xlink:href="images/sprite.svg#icon-chevron-small-down"></use>
+                        </svg>
+                    </button>
+
+                </li>
+                <li class="navigation__item">
+                    <a href="" class="navigation__link">how it works</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="" class="navigation__link">why choose us</a>
+                    <button class="navigation__dropdown-btn">
+                        <svg class="navigation__dropdown-icon">
+                            <use xlink:href="images/sprite.svg#icon-chevron-small-down"></use>
+                        </svg>
+                    </button>
+                </li>
+                <li id="sign_up">
+                    <a href="#">
+                        <!-- sign up -->
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+
+        <a href="#" class="navigation__cta">
+            log in
+            <svg class="navigation__login-icon">
+                <use xlink:href="images/sprite.svg#icon-login"></use>
+            </svg>
+        </a>
+
+
+    </header>
+
+
+
+
+
+    <div class="search_container">
+        <!-- <ul class="sub__header  mobile--hide">
+            <li><a href="#">
+                    graphic & design
+                </a></li>
+            <li><a href="#">
+                    Digital marketing
+                </a></li>
+            <li><a href="#">
+                    programming & tech
+                </a></li>
+            <li><a href="#">
+                    business
+                </a></li>
+            <li><a href="#">
+                    video & animation
+                </a></li>
+            <li><a href="#">
+                    lifestyle
+                </a></li>
+            <li><a href="#">
+                    writing and translation
+                </a></li>
+        </ul> -->
+
+
+
+        <div class="filter_result_box">
+            <span class="filter_result ">
+                <h1>All <span> "Projects" </span> </h1>
+            </span>
+            <div class="projects--contents">
+                <a href="#">Bids</a>
+                <a href="./current_job.html"> Current Jobs</a>
+                <a href="./past_jobs.html"> Past Jobs</a>
+            </div>
+            <div class="filterpop_box">
+                <a href="#filterpop" class="mobile_filter">
+                    <span>
+                        Filter
+                    </span>
+                </a>
+            </div>
+            <div class="mobile-filter-popup  mobile--hid" id="filterpop">
+                <div class="mobile-filter--content">
+                    <div class="mobile-filter__head">
+                        <p>Filter</p>
+
+                        <a href="#close" class="closepop">
+                            &times
+                        </a>
+                    </div>
+                    <div class="mobile-filter__accordion">
+                        <button class="accordion">Categories</button>
+                        <div class="accordion-content">
+                            <div class="categories__links">
+                                <span id="all_categories">
+                                    <a href="#">
+                                        All Categories
+
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="#">
+                                        programming and tech
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="#">
+                                        programming and tech
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="#">
+                                        programming and tech
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="#">
+                                        programming and tech
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="#">
+                                        programming and tech
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="#">
+                                        programming and tech
+                                    </a>
+                                </span>
+                            </div>
+
+
+
+
+                        </div>
+
+                        <button class="accordion">Lancer Type</button>
+                        <div class="accordion-content">
+                            <div class="categories__links">
+                                <form action="#">
+                                    <p>
+                                        <input type="radio" id="select1" name="radio-group">
+                                        <label for="select1">Lancers & Agencies</label>
+                                    </p>
+                                    <p>
+                                        <input type="radio" id="select2" name="radio-group">
+                                        <label for="select2">Lancers</label>
+                                    </p>
+                                    <p>
+                                        <input type="radio" id="select3" name="radio-group">
+                                        <label for="select3">Orange</label>
+                                    </p>
+                                </form>
+                            </div>
+                        </div>
+
+
+                        <button class="accordion">Hourly Rates</button>
+                        <div class="accordion-content">
+                            <div class="categories__links">
+                                <form action="#">
+                                    <p>
+                                        <input type="radio" id="a1" name="radi-group">
+                                        <label for="a1">$10 And Below</label>
+                                    </p>
+                                    <p>
+                                        <input type="radio" id="a2" name="radi-group">
+                                        <label for="a2">$10 To $30</label>
+                                    </p>
+                                    <p>
+                                        <input type="radio" id="a3" name="radi-group">
+                                        <label for="a3">$30 To $60</label>
+                                    </p>
+                                    <p>
+                                        <input type="radio" id="a4" name="radi-group">
+                                        <label for="a4">$60 And Above</label>
+                                    </p>
+                                </form>
+                            </div>
+                        </div>
+
+
+                        <button class="accordion">Job Success</button>
+                        <div class="accordion-content">
+                            <div class="categories__links">
+                                <form action="#">
+                                    <p>
+                                        <input type="radio" id="a5" name="radi-group">
+                                        <label for="a5">Any Job Success</label>
+                                    </p>
+                                    <p>
+                                        <input type="radio" id="a6" name="radi-group">
+                                        <label for="a6">80%</label>
+                                    </p>
+                                    <p>
+                                        <input type="radio" id="a7" name="radi-group">
+                                        <label for="a7">90%</label>
+                                    </p>
+                                    <p>
+                                        <input type="radio" id="a8" name="radi-group">
+                                        <label for="a8">100%</label>
+                                    </p>
+                                </form>
+                            </div>
+                        </div>
+
+
+                        <button class="accordion nth-term">Lancer Rating</button>
+                        <div class="accordion-content">
+                            <div class="categories__links">
+                                <form action="#">
+                                    <p>
+                                        <input type="radio" id="b9" name="radi-group">
+                                        <label for="b9">Any Badge</label>
+                                    </p>
+                                    <p>
+                                        <input type="radio" id="b1" name="radi-group">
+                                        <label for="b1">Bronze Badge</label>
+                                    </p>
+                                    <p>
+                                        <input type="radio" id="b2" name="radi-group">
+                                        <label for="b2">ilver Badge</label>
+                                    </p>
+                                    <p>
+                                        <input type="radio" id="b3" name="radi-group">
+                                        <label for="b3">Gold Badge</label>
+                                    </p>
+                                </form>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="filter__apply">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    Apply
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Clear all
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filter-result__container">
+               
+                <div class="filter_result-right">
+                    <div class="filter-result__contents">
+                        <div class="filter_search-box">
+                            <div class="search-box">
+                                <input type="text" class="search-input" placeholder="Search By Keyword...">
+
+                                <button class="search-button">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="advanced_result-contents">
+                           
+
+                            <div class="card--section">
+                                <div class="freelancer-tile">
+                                    <div class="flex-1">
+                                        <div class="d-flex">
+                                            <div class="freelancer-title-identity">
+                                                <div class="identity-portrait">
+                                                    <div class="profile-photo">
+                                                       
+                                                        <button class="contact-btn unbid_Btn">
+                                                            <a href="#">
+                                                                unbid
+                                                            </a>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="identity-content  projects--content">
+                                                <div class="identity-name  projects  project--1">
+                                                    First Name S.
+                                                </div>
+                                                
+                                                <p class="freelancer-title  client-proposal projects  project--2">
+                                                    I want to build a company site.
+                                                </p>
+                                                <div class="d-block">
+                                                    <div class="country--name">
+                                                        Lagos
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+
+                                            <div class="profile-stats_wrapper   projects--stats">
+                                                <div class="profile-container">
+                                                    <ul>
+                                                        <li class="badge e-flex"> <span class="badge-icon"></span>$10 -
+                                                            $20</li>
+                                                        <li class="badge">12 days left</li>
+                                                        <li class="badge percent">
+                                                            <span class="success-bar--text">
+                                                                2 Bids
+                                                            </span>
+                                                        </li>
+                                                        <li class="badge"> <span>500</span> Reviews</li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="overview">
+                                                I am owner of Webemblaze, and I manage team of 3 developers. I am an IT
+                                                graduate having skills in software development and web scripting. I did
+                                                some research work as well in software testing and quality assurance. My
+                                                main area of strength is ERP/CRM setup and customization. I have skills
+                                                in custom solutions development, mobile apps development and API
+                                                integrations.
+
+                                                I started my company on Upwork(Odesk) in 2011 and we have large
+                                                successful work history. We worked on many projects that involve Zoho
+                                                CRM setup and customization. We have experience in Zoho, Salesforce, MS
+                                                Dynamics and Sugar CRMs. We have experience for integration of almost
+                                                all popular APIs that includes Yahoo, Google apps, Amazon, Paypal, Xero,
+                                                Mailchimp, Twilio and many more. We also developed custom solutions and
+                                                always keen to work on innovative applications. We did several projects
+                                                on games development and android mobile applications as well.
+
+                                                Our objective is to build great business and long term relationship with
+                                                clients. I do this by offering the most professional work possible in
+                                                the time customer needs it done and within the budget that they set.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="freelancer-skills">
+                                    <div class="content">
+                                        <button class="prev" class="btn">
+                                            <i class="fas fa-chevron-left"></i>
+                                        </button>
+                                        <div class="con-cards">
+                                            <div class="card">
+
+
+                                                <div class="con-text">
+                                                    <p>Python</p>
+
+                                                </div>
+                                            </div>
+                                            <div class="card">
+
+
+                                                <div class="con-text">
+                                                    <p>Graphic Designer </p>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+
+
+                                                <div class="con-text">
+                                                    <p>Node Js</p>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+
+
+                                                <div class="con-text">
+                                                    <p>Data Analysis</p>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+
+
+                                                <div class="con-text">
+                                                    <p>Angular</p>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+
+
+                                                <div class="con-text">
+                                                    <p>Mongo </p>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+
+
+                                                <div class="con-text">
+                                                    <p>Python software</p>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+
+
+                                                <div class="con-text">
+                                                    <p>Python software</p>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+
+
+                                                <div class="con-text">
+                                                    <p>Python software</p>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+
+
+                                                <div class="con-text">
+                                                    <p>Python software</p>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+
+
+                                                <div class="con-text">
+                                                    <p>Python software</p>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+
+
+                                                <div class="con-text">
+                                                    <p>Python software</p>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+
+
+                                                <div class="con-text">
+                                                    <p>End</p>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                        <button class="next" class="btn">
+                                            <i class="fas fa-chevron-right"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        <div class="card--section">
+                            <div class="freelancer-tile">
+                                <div class="flex-1">
+                                    <div class="d-flex">
+                                        <div class="freelancer-title-identity">
+                                            <div class="identity-portrait">
+                                                <div class="profile-photo">
+                        
+                                                    <button class="contact-btn unbid_Btn">
+                                                        <a href="#">
+                                                            unbid
+                                                        </a>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="identity-content  projects--content">
+                                            <div class="identity-name  projects  project--1">
+                                                First Name S.
+                                            </div>
+                        
+                                            <p class="freelancer-title  client-proposal projects  project--2">
+                                                I want to build a company site.
+                                            </p>
+                                            <div class="d-block">
+                                                <div class="country--name">
+                                                    Lagos
+                                                </div>
+                                            </div>
+                        
+                        
+                                        </div>
+                        
+                                        <div class="profile-stats_wrapper   projects--stats">
+                                            <div class="profile-container">
+                                                <ul>
+                                                    <li class="badge e-flex"> <span class="badge-icon"></span>$10 -
+                                                        $20</li>
+                                                    <li class="badge">12 days left</li>
+                                                    <li class="badge percent">
+                                                        <span class="success-bar--text">
+                                                            2 Bids
+                                                        </span>
+                                                    </li>
+                                                    <li class="badge"> <span>500</span> Reviews</li>
+                        
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="overview">
+                                            I am owner of Webemblaze, and I manage team of 3 developers. I am an IT
+                                            graduate having skills in software development and web scripting. I did
+                                            some research work as well in software testing and quality assurance. My
+                                            main area of strength is ERP/CRM setup and customization. I have skills
+                                            in custom solutions development, mobile apps development and API
+                                            integrations.
+                        
+                                            I started my company on Upwork(Odesk) in 2011 and we have large
+                                            successful work history. We worked on many projects that involve Zoho
+                                            CRM setup and customization. We have experience in Zoho, Salesforce, MS
+                                            Dynamics and Sugar CRMs. We have experience for integration of almost
+                                            all popular APIs that includes Yahoo, Google apps, Amazon, Paypal, Xero,
+                                            Mailchimp, Twilio and many more. We also developed custom solutions and
+                                            always keen to work on innovative applications. We did several projects
+                                            on games development and android mobile applications as well.
+                        
+                                            Our objective is to build great business and long term relationship with
+                                            clients. I do this by offering the most professional work possible in
+                                            the time customer needs it done and within the budget that they set.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="freelancer-skills">
+                                <div class="content">
+                                    <button class="prev" class="btn">
+                                        <i class="fas fa-chevron-left"></i>
+                                    </button>
+                                    <div class="con-cards">
+                                        <div class="card">
+                        
+                        
+                                            <div class="con-text">
+                                                <p>Python</p>
+                        
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                        
+                        
+                                            <div class="con-text">
+                                                <p>Graphic Designer </p>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                        
+                        
+                                            <div class="con-text">
+                                                <p>Node Js</p>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                        
+                        
+                                            <div class="con-text">
+                                                <p>Data Analysis</p>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                        
+                        
+                                            <div class="con-text">
+                                                <p>Angular</p>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                        
+                        
+                                            <div class="con-text">
+                                                <p>Mongo </p>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                        
+                        
+                                            <div class="con-text">
+                                                <p>Python software</p>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                        
+                        
+                                            <div class="con-text">
+                                                <p>Python software</p>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                        
+                        
+                                            <div class="con-text">
+                                                <p>Python software</p>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                        
+                        
+                                            <div class="con-text">
+                                                <p>Python software</p>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                        
+                        
+                                            <div class="con-text">
+                                                <p>Python software</p>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                        
+                        
+                                            <div class="con-text">
+                                                <p>Python software</p>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                        
+                        
+                                            <div class="con-text">
+                                                <p>End</p>
+                                            </div>
+                                        </div>
+                        
+                        
+                                    </div>
+                                    <button class="next" class="btn">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div><div class="card--section">
+                            <div class="freelancer-tile">
+                                <div class="flex-1">
+                                    <div class="d-flex">
+                                        <div class="freelancer-title-identity">
+                                            <div class="identity-portrait">
+                                                <div class="profile-photo">
+                        
+                                                    <button class="contact-btn unbid_Btn">
+                                                        <a href="#">
+                                                            unbid
+                                                        </a>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="identity-content  projects--content">
+                                            <div class="identity-name  projects  project--1">
+                                                First Name S.
+                                            </div>
+                        
+                                            <p class="freelancer-title  client-proposal projects  project--2">
+                                                I want to build a company site.
+                                            </p>
+                                            <div class="d-block">
+                                                <div class="country--name">
+                                                    Lagos
+                                                </div>
+                                            </div>
+                        
+                        
+                                        </div>
+                        
+                                        <div class="profile-stats_wrapper   projects--stats">
+                                            <div class="profile-container">
+                                                <ul>
+                                                    <li class="badge e-flex"> <span class="badge-icon"></span>$10 -
+                                                        $20</li>
+                                                    <li class="badge">12 days left</li>
+                                                    <li class="badge percent">
+                                                        <span class="success-bar--text">
+                                                            2 Bids
+                                                        </span>
+                                                    </li>
+                                                    <li class="badge"> <span>500</span> Reviews</li>
+                        
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="overview">
+                                            I am owner of Webemblaze, and I manage team of 3 developers. I am an IT
+                                            graduate having skills in software development and web scripting. I did
+                                            some research work as well in software testing and quality assurance. My
+                                            main area of strength is ERP/CRM setup and customization. I have skills
+                                            in custom solutions development, mobile apps development and API
+                                            integrations.
+                        
+                                            I started my company on Upwork(Odesk) in 2011 and we have large
+                                            successful work history. We worked on many projects that involve Zoho
+                                            CRM setup and customization. We have experience in Zoho, Salesforce, MS
+                                            Dynamics and Sugar CRMs. We have experience for integration of almost
+                                            all popular APIs that includes Yahoo, Google apps, Amazon, Paypal, Xero,
+                                            Mailchimp, Twilio and many more. We also developed custom solutions and
+                                            always keen to work on innovative applications. We did several projects
+                                            on games development and android mobile applications as well.
+                        
+                                            Our objective is to build great business and long term relationship with
+                                            clients. I do this by offering the most professional work possible in
+                                            the time customer needs it done and within the budget that they set.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="freelancer-skills">
+                                <div class="content">
+                                    <button class="prev" class="btn">
+                                        <i class="fas fa-chevron-left"></i>
+                                    </button>
+                                    <div class="con-cards">
+                                        <div class="card">
+                        
+                        
+                                            <div class="con-text">
+                                                <p>Python</p>
+                        
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                        
+                        
+                                            <div class="con-text">
+                                                <p>Graphic Designer </p>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                        
+                        
+                                            <div class="con-text">
+                                                <p>Node Js</p>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                        
+                        
+                                            <div class="con-text">
+                                                <p>Data Analysis</p>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                        
+                        
+                                            <div class="con-text">
+                                                <p>Angular</p>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                        
+                        
+                                            <div class="con-text">
+                                                <p>Mongo </p>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                        
+                        
+                                            <div class="con-text">
+                                                <p>Python software</p>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                        
+                        
+                                            <div class="con-text">
+                                                <p>Python software</p>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                        
+                        
+                                            <div class="con-text">
+                                                <p>Python software</p>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                        
+                        
+                                            <div class="con-text">
+                                                <p>Python software</p>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                        
+                        
+                                            <div class="con-text">
+                                                <p>Python software</p>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                        
+                        
+                                            <div class="con-text">
+                                                <p>Python software</p>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                        
+                        
+                                            <div class="con-text">
+                                                <p>End</p>
+                                            </div>
+                                        </div>
+                        
+                        
+                                    </div>
+                                    <button class="next" class="btn">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="pagination">
+            <a href="#">&laquo;</a>
+            <a href="#">1</a>
+            <a href="#" class="active">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">&raquo;</a>
+        </div>
+    </div>
+
+    <footer class="the-footer">
+        <div class="footer-container">
+            <div class="FOOT_1">
+                <a href="">
+                    <img src="/images/lancerspoint-1.png" alt="">
+                </a>
+    
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate deserunt soluta earum quod sequi
+                    eveniet!</p>
+    
+                <div class="socials">
+                    <a href="">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+    
+                    <a href="">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+    
+                    <a href="">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </div>
+    
+                <h6> © Lancerpoint 2021</h6>
+            </div>
+    
+            <div class="FOOT_2">
+                <div class="FOOT_2-content1">
+                    <h5>COMPANY</h5>
+                    <ul>
+                        <a href="">
+                            <li>ABOUT</li>
+                        </a>
+                        <a href="">
+                            <li>SERVICE</li>
+                        </a>
+                        <a href="">
+                            <li>TESTIMONIAL</li>
+                        </a>
+                        <a href="">
+                            <li>BLOG</li>
+                        </a>
+                        <a href="">
+                            <li>CONTACT</li>
+                        </a>
+                    </ul>
+                </div>
+    
+                <div class="FOOT_2-content2">
+                    <h5>QUICK LINKS</h5>
+                    <ul>
+                        <a href="">
+                            <li>SEARCH</li>
+                        </a>
+                        <a href="">
+                            <li>FEATURED PROJECTS</li>
+                        </a>
+                        <a href="">
+                            <li>SIGN IN</li>
+                        </a>
+                        <a href="">
+                            <li>SIGN UP</li>
+                        </a>
+                    </ul>
+                </div>
+    
+            </div>
+    
+            <div class="FOOT_3">
+                <h5>STAY IN TOUCH</h5>
+                <div class="input-container">
+                    <input type="text" placeholder="search for a skill...">
+                    <i class="fas fa-paper-plane"></i>
+                </div>
+                <i class="fas fa-phone-alt"> : 08112104611</i><br>
+                <i class="fas fa-envelope"> : spartamosco20@gmail</i>
+            </div>
+    
+            <div class="FOOT_4">
+                <a href="#header">
+                    <i class="fas fa-arrow-up"></i>
+                </a>
+    
+            </div>
+        </div>
+    </footer>
+    <script src="../script/hamburger-menu.js"></script>
+    <script src="../script/badge-scroll.js"></script>
+    <script src="../script/accordion.js"></script>
+</body>
+
+</html>

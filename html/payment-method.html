@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment method page</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/lancers-profile-page.css">
+    <link rel="stylesheet" href="../css/payment--methods.css">
+    <link rel="shortcut icon" href="../images/logos/1615836169185_lancerspoint-logo-2.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ba80ca1c79.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   
+    <input type="checkbox" id="toggleNav" class="hamburger">
+
+    <label for="toggleNav" class="hamburger__button">
+       <figure>
+            <span class="hamburger__line"></span>
+            <span class="hamburger__line"></span>
+            <span class="hamburger__line"></span>
+       </figure>
+    </label>
+
+    <div class="overlay"></div>
+
+    <header class="navigation  mobile--hide">
+        <img src="../images/logos/1615836166736_lanserpoint-point-long.png" alt="logo" class="navigation__logo">
+        <form action="#" class="navigation__search">
+            <input type="text" class="navigation__input" placeholder="Search for a skill...">
+            <button class="navigation__search-btn">
+                <svg class="navigation__search-icon">
+                    <use xlink:href="images/sprite.svg#icon-magnifying-glass"></use>
+                </svg>
+            </button>
+        </form>
+
+        <nav>
+            <ul class="navigation__list">
+                <li class="navigation__item">
+                    <a href="" class="navigation__link">find jobs</a>
+                    <button class="navigation__dropdown-btn">
+                        <svg class="navigation__dropdown-icon">
+                            <use xlink:href="images/sprite.svg#icon-chevron-small-down"></use>
+                        </svg>
+                    </button>
+
+                </li>
+                <li class="navigation__item">
+                    <a href="" class="navigation__link">how it works</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="" class="navigation__link">why choose us</a>
+                    <button class="navigation__dropdown-btn">
+                        <svg class="navigation__dropdown-icon">
+                            <use xlink:href="images/sprite.svg#icon-chevron-small-down"></use>
+                        </svg>
+                    </button>
+                </li>
+                <li id="sign_up">
+                    <a href="#">
+                        <!-- sign up -->
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+
+        <a href="#" class="navigation__cta">
+            log in
+            <svg class="navigation__login-icon">
+                <use xlink:href="images/sprite.svg#icon-login"></use>
+            </svg>
+        </a>
+
+
+    </header>
+
+
+    <div class="payment-method-main">
+        <div class="payment-method-container">
+            <div class="PM_1">
+                <h1>Select A Payment Method</h1>
+
+                <div class="debit_credit_card-main">
+                    <div class="dcc-container">
+                        <div class="dcc">
+                            <div class="circle">
+                                <div class="inner-circle"></div>
+                            </div>
+                            <h2>Debit / Credit Card</h2>
+                        </div>
+                        <h6>All major cards accepted</h6>
+                    </div>
+
+                    <div class="form-container">
+                        <form action="">
+                            <div class="form-content-1">
+                                <input type="text" placeholder="Card number *">
+                                <input type="text" placeholder="Card holder's name *">
+                            </div>
+                            <div class="form-content-2">
+                                <input type="text" placeholder="Expiry date *">
+                                <input type="text" placeholder="CCV / CVV *">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="PM_2-container">
+                    <div class="PM_2-container-content">
+                        <label for="">
+                            <input type="radio" class="radio" name="paypal">
+                        </label>
+                        <h3>Paypal</h3>
+                        <i class="fab fa-paypal"></i>
+                    </div>
+
+                    <div class="PM_2-container-content">
+                        <label for="">
+                            <input type="radio" class="radio" name="paypal">
+                        </label>
+                        <h3>Paypal</h3>
+                        <i class="fab fa-paypal"></i>
+                    </div>
+
+                    <div class="PM_2-container-content">
+                        <label for="">
+                            <input type="radio" class="radio" name="paypal">
+                        </label>
+                        <h3>Paypal</h3>
+                        <i class="fab fa-paypal"></i>
+                    </div>
+
+                    <div class="PM_2-container-content">
+                        <label for="">
+                            <input type="radio" class="radio" name="paypal">
+                        </label>
+                        <h3>Paypal</h3>
+                        <i class="fab fa-paypal"></i>
+                    </div>
+
+                    <div class="PM_2-container-content">
+                        <label for="">
+                            <input type="radio" class="radio" name="paypal">
+                        </label>
+                        <h3>Paypal</h3>
+                        <i class="fab fa-paypal"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="PM_2-deposit">
+                <div class="PM_2-deposit-container">
+                    <form action="">
+                        <div class="input-container">
+                            <label for="">Depositors currency</label>
+                            
+                            <select name="currency" id="">
+                                <option value="NGN">NGN</option>
+                                <option value="USD">USD</option>
+                                <option value="EUR">EUR</option>
+                            </select>
+                        </div>
+
+                        <div class="input-container">
+                            <label for="">Depositors Amount</label>
+                            <div class="input-content">
+                                <span>NGN</span>
+                                <input type="number" required>
+                            </div>
+                        </div>
+
+                        <div class="processing-fee-container">
+                            <div class="pf">
+                                <h2>Processing fee</h2>
+                                <i class="fas fa-question-circle"></i>
+                            </div>
+                            <div class="pf-amount">#3,000.00 NGN</div>
+                        </div>
+
+                        <div class="total-container">
+                            <h1>Total</h1>
+                            <div class="pf-amount">#3,000.00 NGN</div>
+                        </div>
+
+                        <div class="button-container">
+                            <button type="submit">CONFIRM AND PAY #3,000 NGN</button>
+                        </div>
+
+                        <div class="agreement-check-box-container">
+                            <input type="checkbox" name="" id="" class="check">
+                            <h4>i agree to the Lancerpoint Terms of service and privacy policy</h4>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="the-footer">
+        <div class="footer-container">
+            <div class="FOOT_1">
+                <a href="">
+                    <img src="/images/lancerspoint-1.png" alt="">
+                </a>
+                
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate  deserunt soluta earum quod sequi eveniet!</p> 
+
+                <div class="socials">
+                    <a href="">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+
+                    <a href="">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+
+                    <a href="">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </div>
+
+                <h6> © Lancerpoint 2021</h6>
+            </div>
+
+            <div class="FOOT_2">
+                <div class="FOOT_2-content1">
+                    <h5>COMPANY</h5>
+                    <ul>
+                        <a href=""><li>ABOUT</li></a>
+                        <a href=""><li>SERVICE</li></a>
+                        <a href=""><li>TESTIMONIAL</li></a>
+                        <a href=""><li>BLOG</li></a>
+                        <a href=""><li>CONTACT</li></a>
+                    </ul>
+                </div>
+
+                <div class="FOOT_2-content2">
+                    <h5>QUICK LINKS</h5>
+                    <ul>
+                        <a href=""><li>SEARCH</li></a>
+                        <a href=""><li>FEATURED PROJECTS</li></a>
+                        <a href=""><li>SIGN IN</li></a>
+                        <a href=""><li>SIGN UP</li></a>
+                    </ul>
+                </div>
+                
+            </div>
+
+            <div class="FOOT_3">
+                <h5>STAY IN TOUCH</h5>
+                <div class="input-container">
+                    <input type="text" placeholder="search for a skill...">
+                    <i class="fas fa-paper-plane"></i>
+                </div>
+                <i class="fas fa-phone-alt"> : 08112104611</i><br>
+                <i class="fas fa-envelope"> : spartamosco20@gmail</i>
+            </div>
+
+            <div class="FOOT_4">
+                <a href="#header">
+                    <i class="fas fa-arrow-up"></i>
+                </a>
+                
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

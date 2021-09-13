@@ -1,0 +1,108 @@
+
+.steps{
+    background-color: #f7f7f7;
+    padding: 10rem 0;
+}
+
+.lancer-categories{
+    padding: 8rem 0;
+    background-color: var(--color-primary);
+
+    .categories{
+        display: flex;
+        align-items: center;
+        flex-flow: row wrap;
+        column-gap:  2rem;
+        row-gap: 2.5rem;
+    }
+
+    .category{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: #FAFFFB;
+
+        &__icon{
+            width: 5rem;
+            height: 5rem;
+            fill: currentColor;
+            margin-right: .5em;
+        }
+
+        &__desc{
+            color: currentColor;
+        }
+    }
+}
+
+.what-makes-us-special{
+    padding: 10rem 0;
+
+    .what-special{
+        display: flex;
+        justify-content: space-between;
+
+        &__illustration{
+            padding: 0 1em;
+            @include respond(phone){
+                display: none;
+            }
+        }
+
+        .special{
+            width: 50%;
+            @include respond(phone){
+               flex: 1;
+            }
+            
+            &__list{
+                list-style: none;
+            }
+
+            &__item{
+                padding: 0 1em;
+            }
+
+            &__item:not(:last-child){
+                margin-bottom: 4rem;
+            }
+            
+
+            &__numbering{
+                font-weight: 900;
+                font-size: 2.5rem;
+            }
+
+            &__title{
+                font-size: 1.5rem;
+                text-transform: uppercase;
+                color: var(--color-primary);
+            }
+
+            &__desc{
+                text-transform: none;
+                color: var(--color-dark);
+                font-weight: 100;
+
+            }
+        }
+    }
+
+    
+}
+
+
+.users-remark{
+    padding: 10rem 0;
+    background-color: var(--color-primary);
+}
+
+.featured-projects{
+    padding: 8rem 0;
+    background-color: #F7F7F7;
+}
+
+.section-questions{
+    padding: 8rem 0;
+    background-color: var(--color-dark);
+}

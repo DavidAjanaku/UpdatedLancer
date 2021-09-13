@@ -1,0 +1,64 @@
+.slider{
+    max-width: 100rem;
+    margin: 0 auto;
+    height: 40rem;
+    position: relative;
+    overflow: hidden;
+
+    &__button{
+        width: 5rem;
+        height: 5rem;
+        border: none;
+        border-radius: 50%; 
+        font-size: 2rem;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        background-color: var(--color-dark);
+        color:var(--color-primary);
+        display: grid;
+        place-items: center;
+
+        @include respond (phone){
+            display: none;
+        }
+
+        &--next{
+            right: 0;
+        }
+    }
+}
+
+.slide{
+    position: absolute;
+    height:90%;
+    transition: transform .5s;
+
+}
+
+.dots{
+    position: absolute;
+    bottom:0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+
+    &__dot{
+        display: inline-block;
+        width: 1.2rem;
+        height: 1.2rem;
+        border-radius: 50%;
+        background-color: var(--color-dark);
+        cursor: pointer;
+
+        &:not(:last-child){
+            margin-right: .5rem;
+        }
+
+        &--active{
+            background-color: #fff;
+        }
+
+    }
+}

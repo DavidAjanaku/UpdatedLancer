@@ -1,0 +1,59 @@
+.testimony{
+    width: 80%;
+    height: 100%;
+    margin:0 auto;
+    border-radius: .5rem;
+    background-color:#fff;
+    padding: 3em 2rem;
+    position: relative;
+
+    @include respond(phone){
+        width: 95%;
+        padding: 2em 1rem;
+    }
+
+    &__title{
+        font-size: 2rem;
+    }
+
+    &__title,
+    &__user-name{
+        text-transform: capitalize;
+        color: var(--color-dark);
+    }
+
+    &__text{
+        font-size: 1.4rem;
+    }
+    
+    &__user{
+        position: absolute;
+        bottom: 3em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__user-img{
+        object-fit: cover;
+        object-position: center;
+        width: 6rem;
+        height: 6rem;
+        border-radius: 50%;
+        position: absolute;
+        left: 0;
+    }
+
+    &__user-name,
+    &__user-post{
+        margin-left: 7rem;
+    }
+
+    &__user-name{
+        font-size: 1.3rem;
+    }
+
+    &__user-post{
+        font-size: 1.2rem;
+    }
+}

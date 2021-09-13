@@ -1,0 +1,64 @@
+body{
+    font-family:var(--default-font);
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.7;
+    color:var(--color-grey);
+}
+.text-main{
+    font-family:var(--default-font-2);
+    font-size: 3rem;
+    text-transform: capitalize;
+    font-weight: 900;
+    color:var(--color-dark);
+}
+
+.text-sub{
+    font-size: var(--default-font-size);
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.heading__main{
+    font-family:var(--default-font-2);
+    font-size: 5rem;
+    text-transform: capitalize;
+    font-weight: 900;
+    color: #fff;
+    line-height: 1;
+    display: block;
+    word-spacing: .8rem;
+}
+
+.heading__sub{
+    display: block;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 100;
+    width: 100%;
+
+   
+}
+
+.heading-secondary,
+.heading-secondary-w{
+    font-family:var(--default-font-2);
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--color-dark);
+    font-size:3.5rem;
+    font-weight: 900;
+}
+
+.heading-secondary-w{
+    color: #FAFFFB;
+}
+
+.heading-tertiary{
+    font-family:var(--default-font-2);
+    text-align: center;
+    text-transform: capitalize;
+    color: #FAFFFB;
+    font-size:2.5rem;
+    font-weight: 900;
+}

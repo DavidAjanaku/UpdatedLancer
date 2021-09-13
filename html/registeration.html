@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Lancerspoint | Getting Started with us </title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/images/logos/1615836169185_lancerspoint-logo-2.png" type="image/x-icon">
+</head>
+<body>
+    <input type="checkbox" id="toggleNav" class="hamburger">
+
+    <label for="toggleNav" class="hamburger__button">
+       <figure>
+            <span class="hamburger__line"></span>
+            <span class="hamburger__line"></span>
+            <span class="hamburger__line"></span>
+       </figure>
+    </label>
+
+    <div class="overlay"></div>
+
+    <header class="navigation">
+        <a href="/index.html">
+            <img src="/images/logos/1615836166736_lanserpoint-point-long.png" alt="logo" class="navigation__logo">
+        </a>
+       <form action="#" class="navigation__search">
+            <input type="text" class="navigation__input" placeholder="Search for a skill...">
+            <button class="navigation__search-btn">
+                <svg class="navigation__search-icon">
+                    <use xlink:href="/images/sprite.svg#icon-magnifying-glass"></use>
+                </svg>
+            </button>
+       </form>
+
+        <nav>
+            <ul class="navigation__list">
+                <li class="navigation__item">
+                    <a href="" class="navigation__link">find jobs</a>
+                    <button class="navigation__dropdown-btn">
+                        <svg class="navigation__dropdown-icon">
+                            <use xlink:href="/images/sprite.svg#icon-chevron-small-down"></use>
+                        </svg>
+                    </button>
+                    
+                </li>
+                <li class="navigation__item">
+                    <a href="" class="navigation__link">how it works</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="" class="navigation__link">why choose us</a>
+                    <button class="navigation__dropdown-btn">
+                        <svg class="navigation__dropdown-icon">
+                            <use xlink:href="/images/sprite.svg#icon-chevron-small-down"></use>
+                        </svg>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+
+        <a href="lancerLogin.html" class="navigation__cta">
+            log in
+            <svg class="navigation__login-icon">
+                <use xlink:href="/images/sprite.svg#icon-login"></use>
+            </svg>
+        </a>
+    </header>
+
+   <div class="flex-container">
+       <div class="flex-container__sub flex-container__sub--1">
+           <div class="cyan">
+               <div class="u-center-text u-margin-bottom-medium">
+                   <h1 class="text-main">create your account now</h1>
+                   <h3 class="text-sub">Lorem ipsum dolor sit, amet consectetur adipisicing elit Harum placea.</h3>
+               </div>
+
+                <a href="#" class="btn btn__icon">
+                    <svg class="cyan__btn-icon">
+                        <use xlink:href="/images/sprite.svg#icon-google"></use>
+                    </svg>
+                    <span class="cyan__btn-text">sign up with google</span>
+                </a>
+
+                <a href="lancerRegister.html" class="btn btn__icon">
+                    <svg class="cyan__btn-icon">
+                        <use xlink:href="/images/sprite.svg#icon-mail"></use>
+                    </svg>
+                    <span class="cyan__btn-text">sign up with email</span>
+                </a>
+
+                <a href="lancerLogin.html" class="btn__link">i already have an account</a>
+           </div>
+
+           <a href="#" class="terms">Terms and conditions</a>
+       </div>
+       <div class="flex-container__sub  flex-container__sub--2">
+            <img src="/images/hero-4.jpg" alt="hero-image">
+       </div>
+   </div>
+    
+</body>
+</html>
